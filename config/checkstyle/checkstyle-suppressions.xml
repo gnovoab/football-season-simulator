@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+        "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+        "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+
+<suppressions>
+    <!-- Suppress checks for test files -->
+    <suppress checks="JavadocMethod" files=".*Test\.java"/>
+    <suppress checks="JavadocType" files=".*Test\.java"/>
+    <suppress checks="MagicNumber" files=".*Test\.java"/>
+    <suppress checks="MethodLength" files=".*Test\.java"/>
+
+    <!-- Suppress checks for model/record classes -->
+    <suppress checks="JavadocMethod" files=".*[\\/]model[\\/].*\.java"/>
+    <suppress checks="JavadocType" files=".*[\\/]model[\\/].*\.java"/>
+    <suppress checks="HideUtilityClassConstructor" files=".*Application\.java"/>
+
+    <!-- Suppress line length for JSON data files loaded as resources -->
+    <suppress checks="LineLength" files=".*[\\/]resources[\\/].*"/>
+</suppressions>
+

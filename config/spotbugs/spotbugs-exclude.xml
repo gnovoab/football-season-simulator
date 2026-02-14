@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter
+        xmlns="https://github.com/spotbugs/filter/3.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://github.com/spotbugs/filter/3.0.0 https://raw.githubusercontent.com/spotbugs/spotbugs/3.1.0/spotbugs/etc/findbugsfilter.xsd">
+
+    <!-- Exclude test classes -->
+    <Match>
+        <Source name="~.*Test\.java"/>
+    </Match>
+
+    <!-- Exclude model/record classes from certain checks -->
+    <Match>
+        <Package name="~com\.example\.footballseasonsimulator\.model.*"/>
+        <Bug pattern="EI_EXPOSE_REP,EI_EXPOSE_REP2"/>
+    </Match>
+
+    <!-- Exclude Spring Boot application class -->
+    <Match>
+        <Class name="com.example.footballseasonsimulator.FootballSeasonSimulatorApplication"/>
+    </Match>
+
+    <!-- Exclude configuration classes -->
+    <Match>
+        <Package name="~com\.example\.footballseasonsimulator\.config.*"/>
+    </Match>
+
+    <!-- Exclude serialization warnings for DTOs -->
+    <Match>
+        <Bug pattern="SE_BAD_FIELD,SE_NO_SERIALVERSIONID"/>
+    </Match>
+
+    <!-- Exclude unread field warnings (often used by frameworks) -->
+    <Match>
+        <Bug pattern="URF_UNREAD_FIELD,UWF_UNWRITTEN_FIELD"/>
+    </Match>
+
+    <!-- Exclude null pointer warnings for Spring-managed beans -->
+    <Match>
+        <Bug pattern="NP_UNWRITTEN_FIELD,NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"/>
+    </Match>
+
+    <!-- Exclude inner class warnings -->
+    <Match>
+        <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON"/>
+    </Match>
+
+    <!-- Exclude random number generator warnings for simulation -->
+    <Match>
+        <Package name="~com\.example\.footballseasonsimulator\.engine.*"/>
+        <Bug pattern="PREDICTABLE_RANDOM"/>
+    </Match>
+
+</FindBugsFilter>
