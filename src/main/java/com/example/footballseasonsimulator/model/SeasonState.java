@@ -5,6 +5,7 @@ package com.example.footballseasonsimulator.model;
  */
 public enum SeasonState {
     IDLE("Idle - Waiting to start"),
+    COUNTDOWN("Countdown to kick-off"),
     RUNNING_FIXTURE("Running fixture matches"),
     WAITING_NEXT_FIXTURE("Waiting for next fixture"),
     SEASON_COMPLETE("Season completed"),

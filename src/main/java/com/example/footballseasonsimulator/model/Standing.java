@@ -1,5 +1,8 @@
 package com.example.footballseasonsimulator.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Represents a team's standing in the league table.
  */
@@ -14,6 +17,7 @@ public class Standing implements Comparable<Standing> {
     private int lost;
     private int goalsFor;
     private int goalsAgainst;
+    private final List<Character> form; // Last 5 results: 'W', 'D', 'L'
 
     public Standing(Team team) {
         this.teamId = team.id();
@@ -26,19 +30,50 @@ public class Standing implements Comparable<Standing> {
         this.lost = 0;
         this.goalsFor = 0;
         this.goalsAgainst = 0;
+        this.form = new ArrayList<>();
+    }
+
+    /**
+     * Create a standing with all values set directly (for live standings calculation).
+     */
+    public static Standing createWithValues(String teamId, String teamName, String teamBadgeUrl,
+                                            int played, int won, int drawn, int lost,
+                                            int goalsFor, int goalsAgainst, List<Character> form) {
+        // Create a minimal team just for the standing
+        Team minimalTeam = new Team(teamId, teamName, teamName, teamBadgeUrl,
+                                    new TeamStrength(50, 50, 50, 50), List.of());
+        Standing s = new Standing(minimalTeam);
+        s.played = played;
+        s.won = won;
+        s.drawn = drawn;
+        s.lost = lost;
+        s.goalsFor = goalsFor;
+        s.goalsAgainst = goalsAgainst;
+        s.form.addAll(form);
+        return s;
     }
 
     public void recordResult(int scored, int conceded) {
         this.played++;
         this.goalsFor += scored;
         this.goalsAgainst += conceded;
-        
+
+        char result;
         if (scored > conceded) {
             this.won++;
+            result = 'W';
         } else if (scored < conceded) {
             this.lost++;
+            result = 'L';
         } else {
             this.drawn++;
+            result = 'D';
+        }
+
+        // Add to form and keep only last 5
+        form.add(result);
+        if (form.size() > 5) {
+            form.remove(0);
         }
     }
 
@@ -62,6 +97,14 @@ public class Standing implements Comparable<Standing> {
     public int getLost() { return lost; }
     public int getGoalsFor() { return goalsFor; }
     public int getGoalsAgainst() { return goalsAgainst; }
+    public List<Character> getForm() { return new ArrayList<>(form); }
+    public String getFormString() {
+        StringBuilder sb = new StringBuilder();
+        for (Character c : form) {
+            sb.append(c);
+        }
+        return sb.toString();
+    }
 
     @Override
     public int compareTo(Standing other) {

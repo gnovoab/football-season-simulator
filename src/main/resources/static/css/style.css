@@ -152,12 +152,12 @@ body {
 }
 
 .matchweek-number {
-    color: var(--accent-blue);
+    color: #f39c12;
 }
 
 .season-badge {
-    background: var(--accent-green);
-    color: #000;
+    background: var(--accent-blue);
+    color: #fff;
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-size: 0.7rem;
@@ -190,7 +190,7 @@ body {
 .time-value {
     font-size: 2rem;
     font-weight: 800;
-    color: var(--accent-blue);
+    color: #f39c12;
     line-height: 1;
 }
 
@@ -217,8 +217,8 @@ body {
 }
 
 .match-row.live {
-    background: rgba(46, 204, 113, 0.08);
-    border-left: 3px solid var(--accent-green);
+    background: rgba(52, 152, 219, 0.06);
+    border-left: 3px solid var(--accent-blue);
 }
 
 .match-row.finished {
@@ -244,7 +244,7 @@ body {
 }
 
 .match-minute.live {
-    color: var(--accent-green);
+    color: #f39c12;
 }
 
 .match-phase {
@@ -313,14 +313,222 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 0.25rem 0.75rem;
-    background: var(--bg-dark);
+    background: transparent;
     border-radius: 4px;
     min-width: 60px;
     justify-content: center;
 }
 
-.match-score-inline.live {
-    background: var(--accent-green);
+.match-score-inline.finished {
+    background: var(--bg-dark);
+}
+
+/* Goal scored blink animation */
+@keyframes goalBlink {
+    0%, 100% { background: transparent; }
+    25%, 75% { background: var(--accent-blue); }
+    50% { background: rgba(52, 152, 219, 0.7); }
+}
+
+.match-row.goal-blink .match-score-inline {
+    animation: goalBlink 0.5s ease-in-out 3;
+}
+
+/* GOAL!!! Inline Celebration - appears inside team container */
+.goal-inline-celebration {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.95), rgba(39, 174, 96, 0.95));
+    padding: 0.15rem 0.4rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(46, 204, 113, 0.5);
+    vertical-align: middle;
+}
+
+/* Home team goal - appears before team name */
+.goal-inline-celebration.home {
+    margin-right: 0.4rem;
+    animation: goalInlineAppearHome 0.3s ease-out;
+}
+
+/* Away team goal - appears after team name */
+.goal-inline-celebration.away {
+    margin-left: 0.4rem;
+    animation: goalInlineAppearAway 0.3s ease-out;
+}
+
+@keyframes goalInlineAppearHome {
+    0% { transform: translateX(-10px) scale(0.3); opacity: 0; }
+    50% { transform: translateX(3px) scale(1.1); }
+    100% { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+@keyframes goalInlineAppearAway {
+    0% { transform: translateX(10px) scale(0.3); opacity: 0; }
+    50% { transform: translateX(-3px) scale(1.1); }
+    100% { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+.goal-inline-celebration.home.fade-out {
+    animation: goalInlineFadeOutHome 0.3s ease-out forwards;
+}
+
+.goal-inline-celebration.away.fade-out {
+    animation: goalInlineFadeOutAway 0.3s ease-out forwards;
+}
+
+@keyframes goalInlineFadeOutHome {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: translateX(-10px) scale(0.8); opacity: 0; }
+}
+
+@keyframes goalInlineFadeOutAway {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: translateX(10px) scale(0.8); opacity: 0; }
+}
+
+.goal-inline-ball {
+    font-size: 0.75rem;
+    animation: goalInlineBounce 0.4s ease-in-out infinite;
+}
+
+@keyframes goalInlineBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+}
+
+.goal-inline-text {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure match-row has relative positioning for inline celebration */
+.match-row {
+    position: relative;
+}
+
+/* ========================================
+   Countdown Modal - Before Match Start
+   ======================================== */
+.countdown-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+    animation: countdownFadeIn 0.3s ease-out;
+}
+
+@keyframes countdownFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes countdownFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.countdown-modal.fade-out {
+    animation: countdownFadeOut 0.3s ease-out forwards;
+}
+
+.countdown-content {
+    text-align: center;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.countdown-title {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.countdown-matchweek {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.countdown-timer {
+    font-size: 8rem;
+    font-weight: 900;
+    color: var(--accent-green);
+    text-shadow: 0 0 30px rgba(46, 204, 113, 0.5), 0 0 60px rgba(46, 204, 113, 0.3);
+    line-height: 1;
+    margin-bottom: 1rem;
+    animation: countdownPulse 1s ease-in-out infinite;
+}
+
+@keyframes countdownPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.countdown-label {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 2rem;
+}
+
+.countdown-matches {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.countdown-match {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.countdown-match img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.countdown-match .vs {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.countdown-match .team-name {
+    color: var(--text-primary);
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.countdown-match .team-name.home {
+    text-align: right;
+}
+
+.countdown-match .team-name.away {
+    text-align: left;
 }
 
 .score-home, .score-away {
@@ -336,6 +544,13 @@ body {
 .match-score-inline.live .score-home,
 .match-score-inline.live .score-away,
 .match-score-inline.live .score-separator {
+    color: var(--text-primary);
+}
+
+/* When goal is scored, make text white during blink */
+.match-row.goal-blink .match-score-inline .score-home,
+.match-row.goal-blink .match-score-inline .score-away,
+.match-row.goal-blink .match-score-inline .score-separator {
     color: #fff;
 }
 
@@ -1136,4 +1351,45 @@ body {
 .commentary-break .commentary-text {
     color: var(--text-muted);
     font-weight: 600;
+}
+
+/* Team Form Indicator */
+.team-form {
+    margin-top: 8px;
+}
+
+.form-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.form-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-right: 4px;
+}
+
+.form-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: white;
+}
+
+.form-win {
+    background: var(--accent-green);
+}
+
+.form-draw {
+    background: #888888;
+}
+
+.form-loss {
+    background: #e74c3c;
 }

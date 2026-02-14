@@ -64,7 +64,15 @@ public class MatchEventPublisher {
         SeasonStateDTO dto = new SeasonStateDTO(leagueId, state, season, matchweek);
         messagingTemplate.convertAndSend("/topic/league/" + leagueId + "/state", dto);
     }
-    
+
+    /**
+     * Publish countdown update before matchweek starts.
+     */
+    public void publishCountdown(String leagueId, int matchweek, int secondsRemaining, Fixture upcomingFixture) {
+        CountdownDTO dto = new CountdownDTO(leagueId, matchweek, secondsRemaining, upcomingFixture);
+        messagingTemplate.convertAndSend("/topic/league/" + leagueId + "/countdown", dto);
+    }
+
     // DTOs for WebSocket messages
     
     public record MatchStateDTO(
@@ -112,6 +120,13 @@ public class MatchEventPublisher {
         SeasonState state,
         int season,
         int matchweek
+    ) {}
+
+    public record CountdownDTO(
+        String leagueId,
+        int matchweek,
+        int secondsRemaining,
+        Fixture upcomingFixture
     ) {}
 }
 

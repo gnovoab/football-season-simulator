@@ -2,6 +2,7 @@ package com.example.footballseasonsimulator.controller;
 
 import com.example.footballseasonsimulator.model.Match;
 import com.example.footballseasonsimulator.model.MatchEvent;
+import com.example.footballseasonsimulator.model.Standing;
 import com.example.footballseasonsimulator.service.SimulationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +32,14 @@ public class MatchController {
         if (match == null) {
             return ResponseEntity.notFound().build();
         }
-        return ResponseEntity.ok(MatchDetailDTO.from(match));
+
+        // Get form data for both teams
+        Standing homeStanding = simulationService.getTeamStanding(match.getLeagueId(), match.getHomeTeam().id());
+        Standing awayStanding = simulationService.getTeamStanding(match.getLeagueId(), match.getAwayTeam().id());
+        String homeForm = homeStanding != null ? homeStanding.getFormString() : "";
+        String awayForm = awayStanding != null ? awayStanding.getFormString() : "";
+
+        return ResponseEntity.ok(MatchDetailDTO.from(match, homeForm, awayForm));
     }
     
     /**
@@ -74,19 +82,19 @@ public class MatchController {
         List<EventDTO> events,
         MatchStatsDTO stats
     ) {
-        public static MatchDetailDTO from(Match match) {
+        public static MatchDetailDTO from(Match match, String homeForm, String awayForm) {
             List<EventDTO> events = match.getEvents().stream()
                 .filter(e -> e.type().isSignificant())
                 .map(EventDTO::from)
                 .toList();
-            
+
             return new MatchDetailDTO(
                 match.getId(),
                 match.getLeagueId(),
                 match.getSeason(),
                 match.getMatchweek(),
-                TeamInfoDTO.from(match.getHomeTeam()),
-                TeamInfoDTO.from(match.getAwayTeam()),
+                TeamInfoDTO.from(match.getHomeTeam(), homeForm),
+                TeamInfoDTO.from(match.getAwayTeam(), awayForm),
                 match.getHomeScore(),
                 match.getAwayScore(),
                 match.getPhase().name(),
@@ -96,15 +104,16 @@ public class MatchController {
             );
         }
     }
-    
+
     public record TeamInfoDTO(
         String id,
         String name,
         String shortName,
-        String badgeUrl
+        String badgeUrl,
+        String form
     ) {
-        public static TeamInfoDTO from(com.example.footballseasonsimulator.model.Team team) {
-            return new TeamInfoDTO(team.id(), team.name(), team.shortName(), team.badgeUrl());
+        public static TeamInfoDTO from(com.example.footballseasonsimulator.model.Team team, String form) {
+            return new TeamInfoDTO(team.id(), team.name(), team.shortName(), team.badgeUrl(), form);
         }
     }
     

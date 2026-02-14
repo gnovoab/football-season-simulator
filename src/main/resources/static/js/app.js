@@ -49,6 +49,12 @@ function connectWebSocket() {
                 stompClient.subscribe(`/topic/league/${league}/status`, function(message) {
                     handleStatusUpdate(league, JSON.parse(message.body));
                 });
+                stompClient.subscribe(`/topic/league/${league}/countdown`, function(message) {
+                    handleCountdown(league, JSON.parse(message.body));
+                });
+                stompClient.subscribe(`/topic/league/${league}/standings`, function(message) {
+                    handleStandingsUpdate(league, JSON.parse(message.body));
+                });
             });
         }, function(error) {
             updateConnectionStatus(false);
@@ -179,9 +185,15 @@ function renderFixtures(fixture, status) {
                     minuteEl.className = `match-minute ${isLive ? 'live' : ''}`;
                 }
 
-                // Update scores
+                // Update scores and detect goals
                 const homeScoreEl = row.querySelector('.score-home');
                 const awayScoreEl = row.querySelector('.score-away');
+                const oldHomeScore = homeScoreEl ? parseInt(homeScoreEl.textContent) || 0 : 0;
+                const oldAwayScore = awayScoreEl ? parseInt(awayScoreEl.textContent) || 0 : 0;
+                const homeGoalScored = match.homeScore > oldHomeScore;
+                const awayGoalScored = match.awayScore > oldAwayScore;
+                const goalScored = homeGoalScored || awayGoalScored;
+
                 if (homeScoreEl) {
                     homeScoreEl.textContent = match.homeScore;
                     homeScoreEl.className = `score-home ${homeWinner ? 'winner' : ''}`;
@@ -194,7 +206,13 @@ function renderFixtures(fixture, status) {
                 // Update score container live class
                 const scoreContainer = row.querySelector('.match-score-inline');
                 if (scoreContainer) {
-                    scoreContainer.className = `match-score-inline ${isLive ? 'live' : ''}`;
+                    scoreContainer.className = `match-score-inline ${isLive ? 'live' : ''} ${isFinished ? 'finished' : ''}`;
+                }
+
+                // Trigger GOAL celebration and blink animation
+                if (goalScored && isLive) {
+                    const scoringTeam = homeGoalScored ? match.homeTeamName : match.awayTeamName;
+                    showGoalCelebration(scoringTeam, row, homeGoalScored);
                 }
 
                 // Update team winner classes
@@ -331,6 +349,22 @@ function renderStandings(standings) {
     container.innerHTML = html;
 }
 
+// Handle real-time standings updates from WebSocket
+function handleStandingsUpdate(leagueId, data) {
+    // Only update if this is the current league
+    if (leagueId !== currentLeague) return;
+
+    // data contains { leagueId, season, standings }
+    if (data.standings && data.standings.length > 0) {
+        // Update cached data
+        if (leagueData[leagueId]) {
+            leagueData[leagueId].standings = data.standings;
+        }
+        // Re-render standings
+        renderStandings(data.standings);
+    }
+}
+
 // Update overall minute display
 function updateOverallMinute(fixture) {
     const minuteDisplay = document.getElementById('overallMinute');
@@ -379,10 +413,63 @@ function handleMatchEvent(leagueId, event) {
 
         // Add visual feedback for goals
         if (event.type === 'GOAL' || event.type === 'PENALTY_SCORED') {
-            matchRow.classList.add('goal-scored');
-            setTimeout(() => matchRow.classList.remove('goal-scored'), 2000);
+            const teamName = event.teamName || 'Team';
+            // Determine if it's a home goal by comparing team name
+            const homeTeamEl = matchRow.querySelector('.team-home .team-name');
+            const homeTeamName = homeTeamEl ? homeTeamEl.textContent.trim() : '';
+            const isHomeTeam = teamName === homeTeamName;
+            showGoalCelebration(teamName, matchRow, isHomeTeam);
         }
     }
+}
+
+// Show inline GOAL!!! celebration on match card
+// isHomeTeam: true = show before home team name, false = show after away team name
+function showGoalCelebration(teamName, matchRow, isHomeTeam) {
+    if (!matchRow) return;
+
+    // Remove any existing celebration on this row
+    const existingCelebration = matchRow.querySelector('.goal-inline-celebration');
+    if (existingCelebration) {
+        existingCelebration.remove();
+    }
+
+    // Create inline celebration element
+    const celebration = document.createElement('span');
+    celebration.className = `goal-inline-celebration ${isHomeTeam ? 'home' : 'away'}`;
+    celebration.innerHTML = `
+        <span class="goal-inline-ball">⚽</span>
+        <span class="goal-inline-text">GOAL!</span>
+    `;
+
+    // Insert celebration inside the team container, next to the team name
+    if (isHomeTeam) {
+        // Home team: insert before the team-name inside .team-home
+        const teamHome = matchRow.querySelector('.team-home');
+        const teamName = teamHome?.querySelector('.team-name');
+        if (teamHome && teamName) {
+            teamHome.insertBefore(celebration, teamName);
+        }
+    } else {
+        // Away team: insert after the team-name inside .team-away
+        const teamAway = matchRow.querySelector('.team-away');
+        const teamName = teamAway?.querySelector('.team-name');
+        if (teamAway && teamName) {
+            teamName.insertAdjacentElement('afterend', celebration);
+        }
+    }
+
+    // Add the goal-blink class for the blue blink effect
+    matchRow.classList.add('goal-blink');
+
+    // Remove celebration after animation completes
+    setTimeout(() => {
+        celebration.classList.add('fade-out');
+        setTimeout(() => {
+            celebration.remove();
+            matchRow.classList.remove('goal-blink');
+        }, 300);
+    }, 2000);
 }
 
 // Handle status updates (matchweek changes, season changes)
@@ -391,6 +478,70 @@ function handleStatusUpdate(leagueId, status) {
     if (leagueId === currentLeague) {
         loadLeagueData(leagueId);
     }
+}
+
+// Handle countdown updates before matchweek starts
+let countdownModal = null;
+
+function handleCountdown(leagueId, countdown) {
+    // Only show countdown for the current league
+    if (leagueId !== currentLeague) return;
+
+    const { matchweek, secondsRemaining, upcomingFixture } = countdown;
+
+    // If countdown is 0, remove the modal
+    if (secondsRemaining === 0) {
+        if (countdownModal) {
+            countdownModal.classList.add('fade-out');
+            setTimeout(() => {
+                if (countdownModal) {
+                    countdownModal.remove();
+                    countdownModal = null;
+                }
+            }, 300);
+        }
+        return;
+    }
+
+    // Create or update countdown modal
+    if (!countdownModal) {
+        countdownModal = document.createElement('div');
+        countdownModal.className = 'countdown-modal';
+        document.body.appendChild(countdownModal);
+    }
+
+    // Build matches preview HTML (show first 3 matches)
+    let matchesHtml = '';
+    if (upcomingFixture && upcomingFixture.matches) {
+        const matchesToShow = upcomingFixture.matches.slice(0, 3);
+        matchesHtml = matchesToShow.map(match => `
+            <div class="countdown-match">
+                <span class="team-name home">${match.homeTeam.name}</span>
+                <img src="${match.homeTeam.badgeUrl}" alt="">
+                <span class="vs">vs</span>
+                <img src="${match.awayTeam.badgeUrl}" alt="">
+                <span class="team-name away">${match.awayTeam.name}</span>
+            </div>
+        `).join('');
+
+        if (upcomingFixture.matches.length > 3) {
+            matchesHtml += `<div class="countdown-match" style="justify-content: center; color: var(--text-muted);">
+                +${upcomingFixture.matches.length - 3} more matches
+            </div>`;
+        }
+    }
+
+    countdownModal.innerHTML = `
+        <div class="countdown-content">
+            <div class="countdown-title">Kick-off in</div>
+            <div class="countdown-timer">${secondsRemaining}</div>
+            <div class="countdown-label">seconds</div>
+            <div class="countdown-matchweek">Matchweek ${matchweek}</div>
+            <div class="countdown-matches">
+                ${matchesHtml}
+            </div>
+        </div>
+    `;
 }
 
 // Show match details modal
@@ -420,6 +571,23 @@ async function showMatchDetails(matchId) {
     }
 }
 
+// Render form indicator (last 5 results as colored circles)
+function renderFormIndicator(formString) {
+    if (!formString || formString.length === 0) {
+        return '<span class="form-indicator"><span class="form-label">Form:</span> -</span>';
+    }
+
+    let circles = '';
+    for (let i = 0; i < formString.length; i++) {
+        const result = formString[i];
+        let colorClass = 'form-draw'; // gray for draw
+        if (result === 'W') colorClass = 'form-win';
+        else if (result === 'L') colorClass = 'form-loss';
+        circles += `<span class="form-circle ${colorClass}" title="${result === 'W' ? 'Win' : result === 'L' ? 'Loss' : 'Draw'}">${result}</span>`;
+    }
+    return `<span class="form-indicator"><span class="form-label">Form:</span> ${circles}</span>`;
+}
+
 // Render match modal content
 function renderMatchModal(match, events) {
     const modalBody = document.getElementById('matchModalBody');
@@ -433,6 +601,9 @@ function renderMatchModal(match, events) {
     const predictionsHtml = renderPredictionsTab(match, events);
     const commentaryHtml = renderCommentaryTab(match, events);
 
+    const homeForm = renderFormIndicator(match.homeTeam.form || '');
+    const awayForm = renderFormIndicator(match.awayTeam.form || '');
+
     modalBody.innerHTML = `
         <div class="text-center mb-4">
             <div class="d-flex align-items-center justify-content-center">
@@ -440,6 +611,7 @@ function renderMatchModal(match, events) {
                     <img src="${match.homeTeam.badgeUrl || '/img/default-badge.png'}" class="mb-2"
                          style="height: 64px;" onerror="this.src='/img/default-badge.png'">
                     <h5>${match.homeTeam.name}</h5>
+                    <div class="team-form">${homeForm}</div>
                 </div>
                 <div class="score-display mx-4" style="font-size: 2.5rem;">
                     ${match.homeScore} - ${match.awayScore}
@@ -448,6 +620,7 @@ function renderMatchModal(match, events) {
                     <img src="${match.awayTeam.badgeUrl || '/img/default-badge.png'}" class="mb-2"
                          style="height: 64px;" onerror="this.src='/img/default-badge.png'">
                     <h5>${match.awayTeam.name}</h5>
+                    <div class="team-form">${awayForm}</div>
                 </div>
             </div>
             <p class="text-muted mt-2">${isFinished ? 'Full Time' : match.timeDisplay}</p>

@@ -15,17 +15,17 @@ public class EventGenerator {
     private final Random random = new Random();
     
     // Base probabilities per match minute (tuned for ~2.5-3 goals per match average)
-    private static final double BASE_SHOT_CHANCE = 0.035;      // ~3 shots per team per minute
-    private static final double BASE_FOUL_CHANCE = 0.012;      // ~1 foul per minute
-    private static final double BASE_CORNER_CHANCE = 0.008;    // ~0.7 corners per minute
+    private static final double BASE_SHOT_CHANCE = 0.12;       // Higher shot frequency
+    private static final double BASE_FOUL_CHANCE = 0.015;      // ~1.3 fouls per minute
+    private static final double BASE_CORNER_CHANCE = 0.012;    // ~1 corner per minute
 
-    // Conversion rates (tuned for realistic goal output)
-    private static final double SHOT_ON_TARGET_RATE = 0.40;    // 40% of shots on target
-    private static final double GOAL_CONVERSION_RATE = 0.28;   // 28% of on-target shots are goals
-    private static final double SAVE_RATE = 0.70;              // 70% of on-target non-goals are saves
-    private static final double YELLOW_CARD_RATE = 0.10;       // 10% of fouls result in yellow
-    private static final double RED_CARD_RATE = 0.005;         // 0.5% of fouls result in red
-    private static final double PENALTY_RATE = 0.02;           // 2% of fouls in box = penalty
+    // Conversion rates (tuned for realistic goal output - avg 2.7 goals per match)
+    private static final double SHOT_ON_TARGET_RATE = 0.38;    // 38% of shots on target
+    private static final double GOAL_CONVERSION_RATE = 0.32;   // 32% of on-target shots are goals
+    private static final double SAVE_RATE = 0.65;              // 65% of on-target non-goals are saves
+    private static final double YELLOW_CARD_RATE = 0.12;       // 12% of fouls result in yellow
+    private static final double RED_CARD_RATE = 0.008;         // 0.8% of fouls result in red
+    private static final double PENALTY_RATE = 0.025;          // 2.5% of fouls in box = penalty
     private static final double PENALTY_CONVERSION = 0.78;     // 78% of penalties scored
     
     /**
