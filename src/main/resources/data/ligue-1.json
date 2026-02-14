@@ -16,83 +16,17 @@
         "goalkeeper": 88
       },
       "players": [
-        {
-          "id": "donnarumma",
-          "name": "Gianluigi Donnarumma",
-          "position": "GOALKEEPER",
-          "shirtNumber": 1,
-          "rating": 88
-        },
-        {
-          "id": "marquinhos",
-          "name": "Marquinhos",
-          "position": "DEFENDER",
-          "shirtNumber": 5,
-          "rating": 86
-        },
-        {
-          "id": "skriniar",
-          "name": "Milan \u0160kriniar",
-          "position": "DEFENDER",
-          "shirtNumber": 37,
-          "rating": 84
-        },
-        {
-          "id": "hakimi",
-          "name": "Achraf Hakimi",
-          "position": "DEFENDER",
-          "shirtNumber": 2,
-          "rating": 86
-        },
-        {
-          "id": "mendes",
-          "name": "Nuno Mendes",
-          "position": "DEFENDER",
-          "shirtNumber": 25,
-          "rating": 84
-        },
-        {
-          "id": "vitinha",
-          "name": "Vitinha",
-          "position": "MIDFIELDER",
-          "shirtNumber": 17,
-          "rating": 84
-        },
-        {
-          "id": "ugarte",
-          "name": "Manuel Ugarte",
-          "position": "MIDFIELDER",
-          "shirtNumber": 4,
-          "rating": 82
-        },
-        {
-          "id": "za\u00efre-emery",
-          "name": "Warren Za\u00efre-Emery",
-          "position": "MIDFIELDER",
-          "shirtNumber": 33,
-          "rating": 80
-        },
-        {
-          "id": "dembele",
-          "name": "Ousmane Demb\u00e9l\u00e9",
-          "position": "FORWARD",
-          "shirtNumber": 10,
-          "rating": 86
-        },
-        {
-          "id": "mbappe",
-          "name": "Kylian Mbapp\u00e9",
-          "position": "FORWARD",
-          "shirtNumber": 7,
-          "rating": 92
-        },
-        {
-          "id": "ramos-g",
-          "name": "Gon\u00e7alo Ramos",
-          "position": "FORWARD",
-          "shirtNumber": 9,
-          "rating": 82
-        }
+        {"id": "safonov", "name": "Matvey Safonov", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 80},
+        {"id": "marquinhos", "name": "Marquinhos", "position": "DEFENDER", "shirtNumber": 5, "rating": 86},
+        {"id": "pacho", "name": "Willian Pacho", "position": "DEFENDER", "shirtNumber": 37, "rating": 80},
+        {"id": "hakimi", "name": "Achraf Hakimi", "position": "DEFENDER", "shirtNumber": 2, "rating": 86},
+        {"id": "mendes", "name": "Nuno Mendes", "position": "DEFENDER", "shirtNumber": 25, "rating": 84},
+        {"id": "vitinha", "name": "Vitinha", "position": "MIDFIELDER", "shirtNumber": 17, "rating": 85},
+        {"id": "ruiz", "name": "Fabián Ruiz", "position": "MIDFIELDER", "shirtNumber": 4, "rating": 82},
+        {"id": "zaire-emery", "name": "Warren Zaïre-Emery", "position": "MIDFIELDER", "shirtNumber": 33, "rating": 82},
+        {"id": "dembele", "name": "Ousmane Dembélé", "position": "FORWARD", "shirtNumber": 10, "rating": 86},
+        {"id": "barcola", "name": "Bradley Barcola", "position": "FORWARD", "shirtNumber": 7, "rating": 82},
+        {"id": "ramos-g", "name": "Gonçalo Ramos", "position": "FORWARD", "shirtNumber": 9, "rating": 82}
       ]
     },
     {
@@ -1461,90 +1395,90 @@
       ]
     },
     {
-      "id": "saint-etienne",
-      "name": "AS Saint-\u00c9tienne",
-      "shortName": "ASSE",
-      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/m4ej831656423694.png",
+      "id": "metz",
+      "name": "FC Metz",
+      "shortName": "FCM",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/xqwpqq1420759638.png",
       "strength": {
-        "attack": 70,
-        "midfield": 70,
-        "defense": 70,
-        "goalkeeper": 72
+        "attack": 72,
+        "midfield": 72,
+        "defense": 72,
+        "goalkeeper": 74
       },
       "players": [
         {
-          "id": "larsonneur",
-          "name": "Gautier Larsonneur",
+          "id": "fischer",
+          "name": "Jonathan Fischer",
           "position": "GOALKEEPER",
           "shirtNumber": 1,
-          "rating": 74
+          "rating": 76
         },
         {
-          "id": "nad\u00e9",
-          "name": "Dylan Batubinsika",
+          "id": "sane-m",
+          "name": "Sadibou San\u00e9",
           "position": "DEFENDER",
           "shirtNumber": 4,
-          "rating": 74
+          "rating": 76
         },
         {
-          "id": "petrot",
-          "name": "Dennis Appiah",
+          "id": "yegbe",
+          "name": "Terry Yegbe",
           "position": "DEFENDER",
           "shirtNumber": 5,
-          "rating": 72
-        },
-        {
-          "id": "ma\u00e7on",
-          "name": "Yvann Ma\u00e7on",
-          "position": "DEFENDER",
-          "shirtNumber": 2,
           "rating": 74
         },
         {
-          "id": "p\u00e9trot",
-          "name": "L\u00e9o P\u00e9trot",
+          "id": "gbamin",
+          "name": "Jean-Philippe Gbamin",
           "position": "DEFENDER",
-          "shirtNumber": 3,
-          "rating": 72
+          "shirtNumber": 2,
+          "rating": 76
         },
         {
-          "id": "moueffek",
-          "name": "A\u00efmen Moueffek",
+          "id": "udol",
+          "name": "Matthieu Udol",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "traore-m",
+          "name": "Boubacar Traor\u00e9",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "toure-m",
+          "name": "Alpha Tour\u00e9",
           "position": "MIDFIELDER",
           "shirtNumber": 8,
           "rating": 74
         },
         {
-          "id": "bouchouari",
-          "name": "Benjamin Bouchouari",
-          "position": "MIDFIELDER",
-          "shirtNumber": 6,
-          "rating": 72
-        },
-        {
-          "id": "cafaro",
-          "name": "Mathieu Cafaro",
+          "id": "deminguet",
+          "name": "Jessy Deminguet",
           "position": "MIDFIELDER",
           "shirtNumber": 10,
           "rating": 74
         },
         {
-          "id": "stassin",
-          "name": "Lucas Stassin",
-          "position": "FORWARD",
-          "shirtNumber": 9,
-          "rating": 74
-        },
-        {
-          "id": "davitashvili",
-          "name": "Zuriko Davitashvili",
+          "id": "hein-m",
+          "name": "Gauthier Hein",
           "position": "FORWARD",
           "shirtNumber": 7,
           "rating": 76
         },
         {
-          "id": "wadji",
-          "name": "Ibrahim Sissoko",
+          "id": "diallo-m",
+          "name": "Habib Diallo",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "tsitaishvili",
+          "name": "Giorgi Tsitaishvili",
           "position": "FORWARD",
           "shirtNumber": 11,
           "rating": 74

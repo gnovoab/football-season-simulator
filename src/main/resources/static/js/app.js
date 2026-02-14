@@ -1001,66 +1001,110 @@ function renderEventPrediction(label, probability) {
 }
 
 function calculatePredictions(match, events) {
-    const homeStr = match.homeTeam.strength?.overall || 75;
-    const awayStr = match.awayTeam.strength?.overall || 75;
+    // Calculate overall strength from available attributes (attack, midfield, defense, goalkeeper)
+    const calcOverall = (str) => {
+        if (!str) return 75;
+        const atk = str.attack || 75;
+        const mid = str.midfield || 75;
+        const def = str.defense || 75;
+        const gk = str.goalkeeper || 75;
+        return (atk * 0.3 + mid * 0.25 + def * 0.25 + gk * 0.2);
+    };
+
+    const homeStr = calcOverall(match.homeTeam.strength);
+    const awayStr = calcOverall(match.awayTeam.strength);
     const homeAtk = match.homeTeam.strength?.attack || 75;
     const awayAtk = match.awayTeam.strength?.attack || 75;
     const homeDef = match.homeTeam.strength?.defense || 75;
     const awayDef = match.awayTeam.strength?.defense || 75;
+    const homeMid = match.homeTeam.strength?.midfield || 75;
+    const awayMid = match.awayTeam.strength?.midfield || 75;
 
-    // Home advantage factor
-    const homeAdvantage = 1.15;
+    // Home advantage factor (typically 5-10% boost)
+    const homeAdvantage = 1.08;
     const adjustedHomeStr = homeStr * homeAdvantage;
 
-    // Win probabilities
-    const totalStr = adjustedHomeStr + awayStr;
-    let homeWin = Math.round((adjustedHomeStr / totalStr) * 60);
-    let awayWin = Math.round((awayStr / totalStr) * 60);
-    let draw = 100 - homeWin - awayWin;
+    // Win probabilities using Elo-style calculation
+    // Strength difference determines probability spread
+    const strDiff = adjustedHomeStr - awayStr;
 
-    // Normalize
-    if (draw < 15) { draw = 15; homeWin -= 5; awayWin -= 5; }
-    if (draw > 35) { draw = 35; homeWin += 5; awayWin += 5; }
+    // Base probabilities: Home 45%, Draw 25%, Away 30% (typical Premier League averages)
+    // Adjust based on strength difference (each point of difference = ~1% shift)
+    let homeWin = Math.round(45 + strDiff * 1.5);
+    let awayWin = Math.round(30 - strDiff * 1.2);
 
-    // Predicted goals
-    const homeExpectedGoals = ((homeAtk / 100) * (1 - awayDef / 150) * 2.5).toFixed(1);
-    const awayExpectedGoals = ((awayAtk / 100) * (1 - homeDef / 150) * 2.0).toFixed(1);
-    const predictedHomeGoals = Math.round(parseFloat(homeExpectedGoals));
-    const predictedAwayGoals = Math.round(parseFloat(awayExpectedGoals));
+    // Draw probability is higher when teams are evenly matched
+    const evenness = 100 - Math.abs(strDiff) * 2;
+    let draw = Math.round(20 + (evenness / 100) * 10);
 
-    // Corners prediction
-    const homeCorners = Math.round(4 + (homeAtk / 100) * 4);
-    const awayCorners = Math.round(4 + (awayAtk / 100) * 4);
+    // Normalize to ensure total = 100%
+    const total = homeWin + draw + awayWin;
+    homeWin = Math.round((homeWin / total) * 100);
+    awayWin = Math.round((awayWin / total) * 100);
+    draw = 100 - homeWin - awayWin;
+
+    // Predicted goals using expected goals model
+    // Average Premier League match has ~2.7 total goals
+    // Home teams score ~1.5 goals, away teams ~1.2 goals on average
+    const homeGoalFactor = (homeAtk / 85) * (85 / awayDef) * (homeMid / 85);
+    const awayGoalFactor = (awayAtk / 85) * (85 / homeDef) * (awayMid / 85);
+
+    const homeExpectedGoals = 1.5 * homeGoalFactor;
+    const awayExpectedGoals = 1.2 * awayGoalFactor;
+
+    const predictedHomeGoals = Math.round(homeExpectedGoals);
+    const predictedAwayGoals = Math.round(awayExpectedGoals);
+
+    // Corners prediction (average match has ~10-11 corners)
+    const homeCorners = Math.round(5 + (homeAtk - 75) / 10 + (85 - awayDef) / 15);
+    const awayCorners = Math.round(5 + (awayAtk - 75) / 10 + (85 - homeDef) / 15);
     const totalCorners = homeCorners + awayCorners;
 
-    // Event likelihoods
-    const btts = Math.round(40 + (homeAtk + awayAtk - homeDef - awayDef) / 4);
-    const over25 = Math.round(45 + (homeAtk + awayAtk) / 10 - (homeDef + awayDef) / 15);
-    const over35 = Math.round(over25 * 0.6);
-    const cleanSheetHome = Math.round(20 + homeDef / 5 - awayAtk / 8);
-    const cleanSheetAway = Math.round(15 + awayDef / 5 - homeAtk / 8);
-    const firstHalfGoals = Math.round(55 + (homeAtk + awayAtk) / 20);
-    const redCard = Math.round(8 + Math.random() * 10);
-    const penalty = Math.round(12 + Math.random() * 10);
+    // Event likelihoods based on team strengths
+    // BTTS: ~50% of Premier League matches have both teams scoring
+    const btts = Math.round(50 + (homeAtk + awayAtk - homeDef - awayDef) / 8);
+
+    // Over 2.5 goals: ~55% of Premier League matches
+    const totalExpectedGoals = homeExpectedGoals + awayExpectedGoals;
+    const over25 = Math.round(40 + totalExpectedGoals * 12);
+    const over35 = Math.round(20 + totalExpectedGoals * 8);
+
+    // Clean sheets: ~30% for home, ~25% for away typically
+    const cleanSheetHome = Math.round(30 + (homeDef - 80) * 2 - (awayAtk - 80) * 1.5);
+    const cleanSheetAway = Math.round(25 + (awayDef - 80) * 2 - (homeAtk - 80) * 1.5);
+
+    // First half goals: ~70% of matches have at least one first half goal
+    const firstHalfGoals = Math.round(65 + totalExpectedGoals * 3);
+
+    // Red card: ~8% of matches have a red card (use deterministic seed based on team names)
+    const teamSeed = (match.homeTeam.name.length + match.awayTeam.name.length) % 10;
+    const redCard = Math.round(6 + teamSeed * 0.8);
+
+    // Penalty: ~15% of matches have a penalty
+    const penalty = Math.round(12 + teamSeed * 0.6);
+
+    // Confidence based on how close the teams are in strength
+    const strengthGap = Math.abs(homeStr - awayStr);
+    const scoreConfidence = Math.round(50 + strengthGap * 2);
 
     return {
-        homeWin: Math.min(Math.max(homeWin, 10), 80),
-        draw: Math.min(Math.max(draw, 10), 40),
-        awayWin: Math.min(Math.max(awayWin, 10), 80),
+        homeWin: Math.min(Math.max(homeWin, 10), 85),
+        draw: Math.min(Math.max(draw, 15), 35),
+        awayWin: Math.min(Math.max(awayWin, 5), 75),
         predictedHomeGoals,
         predictedAwayGoals,
-        scoreConfidence: Math.round(35 + Math.random() * 25),
-        homeCorners,
-        awayCorners,
-        totalCorners,
-        btts: Math.min(Math.max(btts, 20), 85),
-        over25: Math.min(Math.max(over25, 25), 80),
-        over35: Math.min(Math.max(over35, 10), 55),
+        scoreConfidence: Math.min(Math.max(scoreConfidence, 35), 75),
+        homeCorners: Math.min(Math.max(homeCorners, 3), 10),
+        awayCorners: Math.min(Math.max(awayCorners, 2), 9),
+        totalCorners: Math.min(Math.max(totalCorners, 6), 18),
+        btts: Math.min(Math.max(btts, 30), 75),
+        over25: Math.min(Math.max(over25, 30), 80),
+        over35: Math.min(Math.max(over35, 15), 55),
         cleanSheetHome: Math.min(Math.max(cleanSheetHome, 10), 50),
-        cleanSheetAway: Math.min(Math.max(cleanSheetAway, 5), 45),
-        firstHalfGoals: Math.min(Math.max(firstHalfGoals, 40), 80),
-        redCard: Math.min(Math.max(redCard, 5), 25),
-        penalty: Math.min(Math.max(penalty, 8), 30)
+        cleanSheetAway: Math.min(Math.max(cleanSheetAway, 8), 45),
+        firstHalfGoals: Math.min(Math.max(firstHalfGoals, 55), 85),
+        redCard: Math.min(Math.max(redCard, 5), 18),
+        penalty: Math.min(Math.max(penalty, 10), 22)
     };
 }
 
