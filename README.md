@@ -123,25 +123,28 @@ Values range from 0-100:
 
 ## API Endpoints
 
-### League Endpoints (`/api/leagues`)
+> **API Versioning**: All API endpoints use URL-based versioning with the `/api/v1/` prefix.
+> This ensures backward compatibility when new API versions are released.
+
+### League Endpoints (`/api/v1/leagues`)
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/leagues` | Get all leagues |
-| GET | `/api/leagues/{leagueId}` | Get specific league details |
-| GET | `/api/leagues/{leagueId}/standings` | Get current standings |
-| GET | `/api/leagues/{leagueId}/fixtures` | Get current matchweek fixtures |
-| GET | `/api/leagues/{leagueId}/results` | Get completed matches |
-| GET | `/api/leagues/{leagueId}/status` | Get simulation status |
-| GET | `/api/leagues/{leagueId}/next-fixture` | Get next matchweek fixtures |
+| GET | `/api/v1/leagues` | Get all leagues |
+| GET | `/api/v1/leagues/{leagueId}` | Get specific league details |
+| GET | `/api/v1/leagues/{leagueId}/standings` | Get current standings |
+| GET | `/api/v1/leagues/{leagueId}/fixtures` | Get current matchweek fixtures |
+| GET | `/api/v1/leagues/{leagueId}/results` | Get completed matches |
+| GET | `/api/v1/leagues/{leagueId}/status` | Get simulation status |
+| GET | `/api/v1/leagues/{leagueId}/next-fixture` | Get next matchweek fixtures |
 
-### Match Endpoints (`/api/matches`)
+### Match Endpoints (`/api/v1/matches`)
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/matches/{matchId}` | Get match details with stats |
-| GET | `/api/matches/{matchId}/events` | Get all match events |
-| GET | `/api/matches/{matchId}/events/significant` | Get goals, cards, penalties only |
+| GET | `/api/v1/matches/{matchId}` | Get match details with stats |
+| GET | `/api/v1/matches/{matchId}/events` | Get all match events |
+| GET | `/api/v1/matches/{matchId}/events/significant` | Get goals, cards, penalties only |
 
 ### League IDs
 

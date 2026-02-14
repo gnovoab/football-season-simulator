@@ -28,9 +28,9 @@ class LeagueControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    @DisplayName("GET /api/leagues should return all 5 leagues")
+    @DisplayName("GET /api/v1/leagues should return all 5 leagues")
     void getAllLeaguesShouldReturnAllLeagues() throws Exception {
-        mockMvc.perform(get("/api/leagues"))
+        mockMvc.perform(get("/api/v1/leagues"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(5)))
                 .andExpect(jsonPath("$[*].id", containsInAnyOrder(
@@ -38,9 +38,9 @@ class LeagueControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/leagues/premier-league should return Premier League")
+    @DisplayName("GET /api/v1/leagues/premier-league should return Premier League")
     void getLeagueShouldReturnPremierLeague() throws Exception {
-        mockMvc.perform(get("/api/leagues/premier-league"))
+        mockMvc.perform(get("/api/v1/leagues/premier-league"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value("premier-league"))
                 .andExpect(jsonPath("$.name").value("Premier League"))
@@ -49,9 +49,9 @@ class LeagueControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/leagues/la-liga should return La Liga")
+    @DisplayName("GET /api/v1/leagues/la-liga should return La Liga")
     void getLeagueShouldReturnLaLiga() throws Exception {
-        mockMvc.perform(get("/api/leagues/la-liga"))
+        mockMvc.perform(get("/api/v1/leagues/la-liga"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value("la-liga"))
                 .andExpect(jsonPath("$.name").value("La Liga"))
@@ -59,9 +59,9 @@ class LeagueControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/leagues/serie-a should return Serie A")
+    @DisplayName("GET /api/v1/leagues/serie-a should return Serie A")
     void getLeagueShouldReturnSerieA() throws Exception {
-        mockMvc.perform(get("/api/leagues/serie-a"))
+        mockMvc.perform(get("/api/v1/leagues/serie-a"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value("serie-a"))
                 .andExpect(jsonPath("$.name").value("Serie A"))
@@ -69,9 +69,9 @@ class LeagueControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/leagues/bundesliga should return Bundesliga")
+    @DisplayName("GET /api/v1/leagues/bundesliga should return Bundesliga")
     void getLeagueShouldReturnBundesliga() throws Exception {
-        mockMvc.perform(get("/api/leagues/bundesliga"))
+        mockMvc.perform(get("/api/v1/leagues/bundesliga"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value("bundesliga"))
                 .andExpect(jsonPath("$.name").value("Bundesliga"))
@@ -79,9 +79,9 @@ class LeagueControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/leagues/ligue-1 should return Ligue 1")
+    @DisplayName("GET /api/v1/leagues/ligue-1 should return Ligue 1")
     void getLeagueShouldReturnLigue1() throws Exception {
-        mockMvc.perform(get("/api/leagues/ligue-1"))
+        mockMvc.perform(get("/api/v1/leagues/ligue-1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value("ligue-1"))
                 .andExpect(jsonPath("$.name").value("Ligue 1"))
@@ -89,16 +89,16 @@ class LeagueControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id} should return 404 for non-existent league")
+    @DisplayName("GET /api/v1/leagues/{id} should return 404 for non-existent league")
     void getLeagueShouldReturn404ForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/leagues/non-existent"))
+        mockMvc.perform(get("/api/v1/leagues/non-existent"))
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/standings should return standings with 20 teams")
+    @DisplayName("GET /api/v1/leagues/{id}/standings should return standings with 20 teams")
     void getStandingsShouldReturnStandings() throws Exception {
-        mockMvc.perform(get("/api/leagues/premier-league/standings"))
+        mockMvc.perform(get("/api/v1/leagues/premier-league/standings"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(20)))
                 .andExpect(jsonPath("$[0].teamId").isNotEmpty())
@@ -106,17 +106,17 @@ class LeagueControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/leagues/bundesliga/standings should return 18 teams")
+    @DisplayName("GET /api/v1/leagues/bundesliga/standings should return 18 teams")
     void getBundesligaStandingsShouldReturn18Teams() throws Exception {
-        mockMvc.perform(get("/api/leagues/bundesliga/standings"))
+        mockMvc.perform(get("/api/v1/leagues/bundesliga/standings"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(18)));
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/status should return simulation status")
+    @DisplayName("GET /api/v1/leagues/{id}/status should return simulation status")
     void getStatusShouldReturnStatus() throws Exception {
-        mockMvc.perform(get("/api/leagues/premier-league/status"))
+        mockMvc.perform(get("/api/v1/leagues/premier-league/status"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.leagueId").value("premier-league"))
                 .andExpect(jsonPath("$.leagueName").value("Premier League"))
@@ -126,77 +126,77 @@ class LeagueControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/status should return 404 for non-existent")
+    @DisplayName("GET /api/v1/leagues/{id}/status should return 404 for non-existent")
     void getStatusShouldReturn404ForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/leagues/non-existent/status"))
+        mockMvc.perform(get("/api/v1/leagues/non-existent/status"))
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/live should return array of live matches")
+    @DisplayName("GET /api/v1/leagues/{id}/live should return array of live matches")
     void getLiveMatchesShouldReturnArray() throws Exception {
-        mockMvc.perform(get("/api/leagues/premier-league/live"))
+        mockMvc.perform(get("/api/v1/leagues/premier-league/live"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray());
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/results should return array of completed matches")
+    @DisplayName("GET /api/v1/leagues/{id}/results should return array of completed matches")
     void getResultsShouldReturnArray() throws Exception {
-        mockMvc.perform(get("/api/leagues/premier-league/results"))
+        mockMvc.perform(get("/api/v1/leagues/premier-league/results"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray());
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/fixture should return current or no content")
+    @DisplayName("GET /api/v1/leagues/{id}/fixture should return current or no content")
     void getCurrentFixtureShouldReturnFixtureOrNoContent() throws Exception {
-        mockMvc.perform(get("/api/leagues/premier-league/fixture"))
+        mockMvc.perform(get("/api/v1/leagues/premier-league/fixture"))
                 .andExpect(status().is(anyOf(equalTo(200), equalTo(204))));
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/next-fixture should return next fixture or no content")
+    @DisplayName("GET /api/v1/leagues/{id}/next-fixture should return next fixture or no content")
     void getNextFixtureShouldReturnFixtureOrNoContent() throws Exception {
-        mockMvc.perform(get("/api/leagues/premier-league/next-fixture"))
+        mockMvc.perform(get("/api/v1/leagues/premier-league/next-fixture"))
                 .andExpect(status().is(anyOf(equalTo(200), equalTo(204))));
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/standings should return 404 for non-existent league")
+    @DisplayName("GET /api/v1/leagues/{id}/standings should return 404 for non-existent league")
     void getStandingsShouldReturn404ForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/leagues/non-existent/standings"))
+        mockMvc.perform(get("/api/v1/leagues/non-existent/standings"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(0)));
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/live should return 404 for non-existent league")
+    @DisplayName("GET /api/v1/leagues/{id}/live should return 404 for non-existent league")
     void getLiveMatchesShouldReturnEmptyForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/leagues/non-existent/live"))
+        mockMvc.perform(get("/api/v1/leagues/non-existent/live"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(0)));
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/results should return empty for non-existent league")
+    @DisplayName("GET /api/v1/leagues/{id}/results should return empty for non-existent league")
     void getResultsShouldReturnEmptyForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/leagues/non-existent/results"))
+        mockMvc.perform(get("/api/v1/leagues/non-existent/results"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(0)));
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/fixture should return no content for non-existent league")
+    @DisplayName("GET /api/v1/leagues/{id}/fixture should return no content for non-existent league")
     void getFixtureShouldReturnNoContentForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/leagues/non-existent/fixture"))
+        mockMvc.perform(get("/api/v1/leagues/non-existent/fixture"))
                 .andExpect(status().isNoContent());
     }
 
     @Test
-    @DisplayName("GET /api/leagues/{id}/next-fixture should return no content for non-existent league")
+    @DisplayName("GET /api/v1/leagues/{id}/next-fixture should return no content for non-existent league")
     void getNextFixtureShouldReturnNoContentForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/leagues/non-existent/next-fixture"))
+        mockMvc.perform(get("/api/v1/leagues/non-existent/next-fixture"))
                 .andExpect(status().isNoContent());
     }
 

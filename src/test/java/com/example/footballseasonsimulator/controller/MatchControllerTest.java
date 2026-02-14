@@ -34,7 +34,7 @@ class MatchControllerTest {
     private SimulationService simulationService;
 
     @Test
-    @DisplayName("GET /api/matches/{id} should return match details when match exists")
+    @DisplayName("GET /api/v1/matches/{id} should return match details when match exists")
     void getMatchShouldReturnMatchDetailsWhenExists() throws Exception {
         // Wait for a current fixture to be available (matches in progress or completed)
         await().atMost(60, TimeUnit.SECONDS)
@@ -47,7 +47,7 @@ class MatchControllerTest {
         Fixture fixture = simulationService.getCurrentFixture("premier-league");
         String matchId = fixture.matches().get(0).getId();
 
-        mockMvc.perform(get("/api/matches/" + matchId))
+        mockMvc.perform(get("/api/v1/matches/" + matchId))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(matchId))
                 .andExpect(jsonPath("$.homeTeam").exists())
@@ -59,7 +59,7 @@ class MatchControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/matches/{id}/events should return events when match exists")
+    @DisplayName("GET /api/v1/matches/{id}/events should return events when match exists")
     void getMatchEventsShouldReturnEventsWhenExists() throws Exception {
         // Wait for a current fixture to be available
         await().atMost(60, TimeUnit.SECONDS)
@@ -72,13 +72,13 @@ class MatchControllerTest {
         Fixture fixture = simulationService.getCurrentFixture("premier-league");
         String matchId = fixture.matches().get(0).getId();
 
-        mockMvc.perform(get("/api/matches/" + matchId + "/events"))
+        mockMvc.perform(get("/api/v1/matches/" + matchId + "/events"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray());
     }
 
     @Test
-    @DisplayName("GET /api/matches/{id}/events/significant should return significant events when match exists")
+    @DisplayName("GET /api/v1/matches/{id}/events/significant should return significant events when match exists")
     void getSignificantEventsShouldReturnEventsWhenExists() throws Exception {
         // Wait for a current fixture to be available
         await().atMost(60, TimeUnit.SECONDS)
@@ -91,36 +91,36 @@ class MatchControllerTest {
         Fixture fixture = simulationService.getCurrentFixture("premier-league");
         String matchId = fixture.matches().get(0).getId();
 
-        mockMvc.perform(get("/api/matches/" + matchId + "/events/significant"))
+        mockMvc.perform(get("/api/v1/matches/" + matchId + "/events/significant"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray());
     }
 
     @Test
-    @DisplayName("GET /api/matches/{id} should return 404 for non-existent match")
+    @DisplayName("GET /api/v1/matches/{id} should return 404 for non-existent match")
     void getMatchShouldReturn404ForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/matches/non-existent-match-id"))
+        mockMvc.perform(get("/api/v1/matches/non-existent-match-id"))
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    @DisplayName("GET /api/matches/{id} should return 404 for random UUID")
+    @DisplayName("GET /api/v1/matches/{id} should return 404 for random UUID")
     void getMatchShouldReturn404ForRandomUuid() throws Exception {
-        mockMvc.perform(get("/api/matches/12345678-1234-1234-1234-123456789012"))
+        mockMvc.perform(get("/api/v1/matches/12345678-1234-1234-1234-123456789012"))
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    @DisplayName("GET /api/matches/{id}/events should return 404 for non-existent match")
+    @DisplayName("GET /api/v1/matches/{id}/events should return 404 for non-existent match")
     void getMatchEventsShouldReturn404ForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/matches/non-existent/events"))
+        mockMvc.perform(get("/api/v1/matches/non-existent/events"))
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    @DisplayName("GET /api/matches/{id}/events/significant should return 404 for non-existent")
+    @DisplayName("GET /api/v1/matches/{id}/events/significant should return 404 for non-existent")
     void getSignificantEventsShouldReturn404ForNonExistent() throws Exception {
-        mockMvc.perform(get("/api/matches/non-existent/events/significant"))
+        mockMvc.perform(get("/api/v1/matches/non-existent/events/significant"))
                 .andExpect(status().isNotFound());
     }
 

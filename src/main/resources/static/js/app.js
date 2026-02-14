@@ -81,10 +81,10 @@ function updateConnectionStatus(connected) {
 async function loadLeagueData(leagueId) {
     try {
         const [fixtureRes, standingsRes, statusRes, nextFixtureRes] = await Promise.all([
-            fetch(`/api/leagues/${leagueId}/fixture`),
-            fetch(`/api/leagues/${leagueId}/standings`),
-            fetch(`/api/leagues/${leagueId}/status`),
-            fetch(`/api/leagues/${leagueId}/next-fixture`)
+            fetch(`/api/v1/leagues/${leagueId}/fixture`),
+            fetch(`/api/v1/leagues/${leagueId}/standings`),
+            fetch(`/api/v1/leagues/${leagueId}/status`),
+            fetch(`/api/v1/leagues/${leagueId}/next-fixture`)
         ]);
 
         const fixture = await fixtureRes.json();
@@ -558,8 +558,8 @@ async function showMatchDetails(matchId) {
 
     try {
         const [matchRes, eventsRes] = await Promise.all([
-            fetch(`/api/matches/${matchId}`),
-            fetch(`/api/matches/${matchId}/events`)
+            fetch(`/api/v1/matches/${matchId}`),
+            fetch(`/api/v1/matches/${matchId}/events`)
         ]);
 
         const match = await matchRes.json();

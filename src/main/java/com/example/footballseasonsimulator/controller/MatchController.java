@@ -21,7 +21,7 @@ import java.util.List;
  * Provides access to individual match details, events, and statistics.
  */
 @RestController
-@RequestMapping("/api/matches")
+@RequestMapping("/api/v1/matches")
 @CrossOrigin(origins = "*")
 @Tag(name = "Matches", description = "Match details and events endpoints. Access individual match information, live events, and match statistics.")
 public class MatchController {

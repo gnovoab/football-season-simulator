@@ -19,7 +19,7 @@ import java.util.List;
  * Provides access to league information, standings, fixtures, and simulation status.
  */
 @RestController
-@RequestMapping("/api/leagues")
+@RequestMapping("/api/v1/leagues")
 @CrossOrigin(origins = "*")
 @Tag(name = "Leagues", description = "League management and information endpoints. Access league data, standings, fixtures, and simulation status for all 5 European leagues.")
 public class LeagueController {
