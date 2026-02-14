@@ -1,0 +1,369 @@
+{
+  "id": "premier-league",
+  "name": "Premier League",
+  "country": "England",
+  "logoUrl": "https://r2.thesportsdb.com/images/media/league/badge/i6o0kh1549879062.png",
+  "teams": [
+    {
+      "id": "arsenal", "name": "Arsenal", "shortName": "ARS",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t3.svg",
+      "strength": {"attack": 88, "midfield": 87, "defense": 85, "goalkeeper": 86},
+      "players": [
+        {"id": "raya", "name": "David Raya", "position": "GOALKEEPER", "shirtNumber": 22, "rating": 85},
+        {"id": "saliba", "name": "William Saliba", "position": "DEFENDER", "shirtNumber": 2, "rating": 87},
+        {"id": "gabriel", "name": "Gabriel Magalhães", "position": "DEFENDER", "shirtNumber": 6, "rating": 85},
+        {"id": "white", "name": "Ben White", "position": "DEFENDER", "shirtNumber": 4, "rating": 84},
+        {"id": "timber", "name": "Jurriën Timber", "position": "DEFENDER", "shirtNumber": 12, "rating": 82},
+        {"id": "rice", "name": "Declan Rice", "position": "MIDFIELDER", "shirtNumber": 41, "rating": 88},
+        {"id": "odegaard", "name": "Martin Ødegaard", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 89},
+        {"id": "havertz", "name": "Kai Havertz", "position": "MIDFIELDER", "shirtNumber": 29, "rating": 84},
+        {"id": "saka", "name": "Bukayo Saka", "position": "FORWARD", "shirtNumber": 7, "rating": 88},
+        {"id": "martinelli", "name": "Gabriel Martinelli", "position": "FORWARD", "shirtNumber": 11, "rating": 84},
+        {"id": "trossard", "name": "Leandro Trossard", "position": "FORWARD", "shirtNumber": 19, "rating": 82}
+      ]
+    },
+    {
+      "id": "man-city", "name": "Manchester City", "shortName": "MCI",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t43.svg",
+      "strength": {"attack": 92, "midfield": 90, "defense": 88, "goalkeeper": 88},
+      "players": [
+        {"id": "ederson", "name": "Ederson", "position": "GOALKEEPER", "shirtNumber": 31, "rating": 88},
+        {"id": "dias", "name": "Rúben Dias", "position": "DEFENDER", "shirtNumber": 3, "rating": 87},
+        {"id": "stones", "name": "John Stones", "position": "DEFENDER", "shirtNumber": 5, "rating": 85},
+        {"id": "walker", "name": "Kyle Walker", "position": "DEFENDER", "shirtNumber": 2, "rating": 84},
+        {"id": "gvardiol", "name": "Joško Gvardiol", "position": "DEFENDER", "shirtNumber": 24, "rating": 85},
+        {"id": "rodri", "name": "Rodri", "position": "MIDFIELDER", "shirtNumber": 16, "rating": 91},
+        {"id": "debruyne", "name": "Kevin De Bruyne", "position": "MIDFIELDER", "shirtNumber": 17, "rating": 90},
+        {"id": "bernardo", "name": "Bernardo Silva", "position": "MIDFIELDER", "shirtNumber": 20, "rating": 87},
+        {"id": "foden", "name": "Phil Foden", "position": "FORWARD", "shirtNumber": 47, "rating": 88},
+        {"id": "haaland", "name": "Erling Haaland", "position": "FORWARD", "shirtNumber": 9, "rating": 93},
+        {"id": "grealish", "name": "Jack Grealish", "position": "FORWARD", "shirtNumber": 10, "rating": 84}
+      ]
+    },
+    {
+      "id": "liverpool", "name": "Liverpool", "shortName": "LIV",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t14.svg",
+      "strength": {"attack": 89, "midfield": 86, "defense": 86, "goalkeeper": 87},
+      "players": [
+        {"id": "alisson", "name": "Alisson Becker", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 89},
+        {"id": "vvd", "name": "Virgil van Dijk", "position": "DEFENDER", "shirtNumber": 4, "rating": 88},
+        {"id": "konate", "name": "Ibrahima Konaté", "position": "DEFENDER", "shirtNumber": 5, "rating": 85},
+        {"id": "taa", "name": "Trent Alexander-Arnold", "position": "DEFENDER", "shirtNumber": 66, "rating": 86},
+        {"id": "robertson", "name": "Andrew Robertson", "position": "DEFENDER", "shirtNumber": 26, "rating": 84},
+        {"id": "mac", "name": "Alexis Mac Allister", "position": "MIDFIELDER", "shirtNumber": 10, "rating": 85},
+        {"id": "szoboszlai", "name": "Dominik Szoboszlai", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 83},
+        {"id": "gravenberch", "name": "Ryan Gravenberch", "position": "MIDFIELDER", "shirtNumber": 38, "rating": 82},
+        {"id": "salah", "name": "Mohamed Salah", "position": "FORWARD", "shirtNumber": 11, "rating": 89},
+        {"id": "nunez", "name": "Darwin Núñez", "position": "FORWARD", "shirtNumber": 9, "rating": 84},
+        {"id": "diaz", "name": "Luis Díaz", "position": "FORWARD", "shirtNumber": 7, "rating": 84}
+      ]
+    },
+    {
+      "id": "chelsea", "name": "Chelsea", "shortName": "CHE",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t8.svg",
+      "strength": {"attack": 83, "midfield": 82, "defense": 80, "goalkeeper": 82},
+      "players": [
+        {"id": "sanchez", "name": "Robert Sánchez", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 80},
+        {"id": "fofana", "name": "Wesley Fofana", "position": "DEFENDER", "shirtNumber": 33, "rating": 82},
+        {"id": "colwill", "name": "Levi Colwill", "position": "DEFENDER", "shirtNumber": 26, "rating": 80},
+        {"id": "james", "name": "Reece James", "position": "DEFENDER", "shirtNumber": 24, "rating": 84},
+        {"id": "cucurella", "name": "Marc Cucurella", "position": "DEFENDER", "shirtNumber": 3, "rating": 80},
+        {"id": "caicedo", "name": "Moisés Caicedo", "position": "MIDFIELDER", "shirtNumber": 25, "rating": 83},
+        {"id": "fernandez", "name": "Enzo Fernández", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 84},
+        {"id": "palmer", "name": "Cole Palmer", "position": "MIDFIELDER", "shirtNumber": 20, "rating": 86},
+        {"id": "jackson", "name": "Nicolas Jackson", "position": "FORWARD", "shirtNumber": 15, "rating": 80},
+        {"id": "mudryk", "name": "Mykhailo Mudryk", "position": "FORWARD", "shirtNumber": 10, "rating": 78},
+        {"id": "sterling", "name": "Raheem Sterling", "position": "FORWARD", "shirtNumber": 7, "rating": 82}
+      ]
+    },
+    {
+      "id": "man-utd", "name": "Manchester United", "shortName": "MUN",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t1.svg",
+      "strength": {"attack": 82, "midfield": 80, "defense": 78, "goalkeeper": 83},
+      "players": [
+        {"id": "onana", "name": "André Onana", "position": "GOALKEEPER", "shirtNumber": 24, "rating": 83},
+        {"id": "varane", "name": "Raphaël Varane", "position": "DEFENDER", "shirtNumber": 19, "rating": 82},
+        {"id": "martinez", "name": "Lisandro Martínez", "position": "DEFENDER", "shirtNumber": 6, "rating": 83},
+        {"id": "dalot", "name": "Diogo Dalot", "position": "DEFENDER", "shirtNumber": 20, "rating": 80},
+        {"id": "shaw", "name": "Luke Shaw", "position": "DEFENDER", "shirtNumber": 23, "rating": 82},
+        {"id": "casemiro", "name": "Casemiro", "position": "MIDFIELDER", "shirtNumber": 18, "rating": 84},
+        {"id": "bruno", "name": "Bruno Fernandes", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 86},
+        {"id": "mainoo", "name": "Kobbie Mainoo", "position": "MIDFIELDER", "shirtNumber": 37, "rating": 78},
+        {"id": "rashford", "name": "Marcus Rashford", "position": "FORWARD", "shirtNumber": 10, "rating": 84},
+        {"id": "hojlund", "name": "Rasmus Højlund", "position": "FORWARD", "shirtNumber": 9, "rating": 80},
+        {"id": "garnacho", "name": "Alejandro Garnacho", "position": "FORWARD", "shirtNumber": 17, "rating": 79}
+      ]
+    },
+    {
+      "id": "tottenham", "name": "Tottenham Hotspur", "shortName": "TOT",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t6.svg",
+      "strength": {"attack": 84, "midfield": 82, "defense": 78, "goalkeeper": 80},
+      "players": [
+        {"id": "vicario", "name": "Guglielmo Vicario", "position": "GOALKEEPER", "shirtNumber": 13, "rating": 82},
+        {"id": "romero", "name": "Cristian Romero", "position": "DEFENDER", "shirtNumber": 17, "rating": 85},
+        {"id": "vandeven", "name": "Micky van de Ven", "position": "DEFENDER", "shirtNumber": 37, "rating": 82},
+        {"id": "udogie", "name": "Destiny Udogie", "position": "DEFENDER", "shirtNumber": 13, "rating": 80},
+        {"id": "porro", "name": "Pedro Porro", "position": "DEFENDER", "shirtNumber": 23, "rating": 82},
+        {"id": "bissouma", "name": "Yves Bissouma", "position": "MIDFIELDER", "shirtNumber": 38, "rating": 80},
+        {"id": "maddison", "name": "James Maddison", "position": "MIDFIELDER", "shirtNumber": 10, "rating": 84},
+        {"id": "bentancur", "name": "Rodrigo Bentancur", "position": "MIDFIELDER", "shirtNumber": 30, "rating": 80},
+        {"id": "son", "name": "Son Heung-min", "position": "FORWARD", "shirtNumber": 7, "rating": 87},
+        {"id": "richarlison", "name": "Richarlison", "position": "FORWARD", "shirtNumber": 9, "rating": 82},
+        {"id": "johnson", "name": "Brennan Johnson", "position": "FORWARD", "shirtNumber": 22, "rating": 78}
+      ]
+    },
+    {
+      "id": "newcastle", "name": "Newcastle United", "shortName": "NEW",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t4.svg",
+      "strength": {"attack": 83, "midfield": 82, "defense": 82, "goalkeeper": 84},
+      "players": [
+        {"id": "pope", "name": "Nick Pope", "position": "GOALKEEPER", "shirtNumber": 22, "rating": 84},
+        {"id": "botman", "name": "Sven Botman", "position": "DEFENDER", "shirtNumber": 4, "rating": 82},
+        {"id": "schar", "name": "Fabian Schär", "position": "DEFENDER", "shirtNumber": 5, "rating": 80},
+        {"id": "trippier", "name": "Kieran Trippier", "position": "DEFENDER", "shirtNumber": 2, "rating": 83},
+        {"id": "burn", "name": "Dan Burn", "position": "DEFENDER", "shirtNumber": 33, "rating": 78},
+        {"id": "guimaraes", "name": "Bruno Guimarães", "position": "MIDFIELDER", "shirtNumber": 39, "rating": 85},
+        {"id": "tonali", "name": "Sandro Tonali", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 82},
+        {"id": "joelinton", "name": "Joelinton", "position": "MIDFIELDER", "shirtNumber": 7, "rating": 80},
+        {"id": "isak", "name": "Alexander Isak", "position": "FORWARD", "shirtNumber": 14, "rating": 85},
+        {"id": "gordon", "name": "Anthony Gordon", "position": "FORWARD", "shirtNumber": 10, "rating": 82},
+        {"id": "wilson", "name": "Callum Wilson", "position": "FORWARD", "shirtNumber": 9, "rating": 80}
+      ]
+    },
+    {
+      "id": "aston-villa", "name": "Aston Villa", "shortName": "AVL",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t7.svg",
+      "strength": {"attack": 82, "midfield": 81, "defense": 80, "goalkeeper": 82},
+      "players": [
+        {"id": "martinez-emi", "name": "Emiliano Martínez", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 87},
+        {"id": "konsa", "name": "Ezri Konsa", "position": "DEFENDER", "shirtNumber": 4, "rating": 82},
+        {"id": "torres", "name": "Pau Torres", "position": "DEFENDER", "shirtNumber": 14, "rating": 83},
+        {"id": "cash", "name": "Matty Cash", "position": "DEFENDER", "shirtNumber": 2, "rating": 80},
+        {"id": "digne", "name": "Lucas Digne", "position": "DEFENDER", "shirtNumber": 12, "rating": 80},
+        {"id": "douglas", "name": "Douglas Luiz", "position": "MIDFIELDER", "shirtNumber": 6, "rating": 82},
+        {"id": "mcginn", "name": "John McGinn", "position": "MIDFIELDER", "shirtNumber": 7, "rating": 82},
+        {"id": "tielemans", "name": "Youri Tielemans", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 82},
+        {"id": "watkins", "name": "Ollie Watkins", "position": "FORWARD", "shirtNumber": 11, "rating": 84},
+        {"id": "bailey", "name": "Leon Bailey", "position": "FORWARD", "shirtNumber": 31, "rating": 80},
+        {"id": "diaby", "name": "Moussa Diaby", "position": "FORWARD", "shirtNumber": 19, "rating": 82}
+      ]
+    },
+    {
+      "id": "brighton", "name": "Brighton & Hove Albion", "shortName": "BHA",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t36.svg",
+      "strength": {"attack": 78, "midfield": 80, "defense": 78, "goalkeeper": 78},
+      "players": [
+        {"id": "steele", "name": "Jason Steele", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 76},
+        {"id": "dunk", "name": "Lewis Dunk", "position": "DEFENDER", "shirtNumber": 5, "rating": 80},
+        {"id": "veltman", "name": "Joël Veltman", "position": "DEFENDER", "shirtNumber": 34, "rating": 78},
+        {"id": "estupinan", "name": "Pervis Estupinán", "position": "DEFENDER", "shirtNumber": 30, "rating": 80},
+        {"id": "igor", "name": "Igor Julio", "position": "DEFENDER", "shirtNumber": 6, "rating": 78},
+        {"id": "gross", "name": "Pascal Groß", "position": "MIDFIELDER", "shirtNumber": 13, "rating": 80},
+        {"id": "gilmour", "name": "Billy Gilmour", "position": "MIDFIELDER", "shirtNumber": 14, "rating": 78},
+        {"id": "caicedo-b", "name": "Carlos Baleba", "position": "MIDFIELDER", "shirtNumber": 45, "rating": 76},
+        {"id": "mitoma", "name": "Kaoru Mitoma", "position": "FORWARD", "shirtNumber": 22, "rating": 82},
+        {"id": "welbeck", "name": "Danny Welbeck", "position": "FORWARD", "shirtNumber": 18, "rating": 78},
+        {"id": "pedro", "name": "João Pedro", "position": "FORWARD", "shirtNumber": 9, "rating": 80}
+      ]
+    },
+    {
+      "id": "west-ham", "name": "West Ham United", "shortName": "WHU",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t21.svg",
+      "strength": {"attack": 78, "midfield": 77, "defense": 76, "goalkeeper": 78},
+      "players": [
+        {"id": "areola", "name": "Alphonse Areola", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 78},
+        {"id": "zouma", "name": "Kurt Zouma", "position": "DEFENDER", "shirtNumber": 4, "rating": 78},
+        {"id": "aguerd", "name": "Nayef Aguerd", "position": "DEFENDER", "shirtNumber": 27, "rating": 78},
+        {"id": "emerson", "name": "Emerson Palmieri", "position": "DEFENDER", "shirtNumber": 33, "rating": 76},
+        {"id": "coufal", "name": "Vladimír Coufal", "position": "DEFENDER", "shirtNumber": 5, "rating": 76},
+        {"id": "paqueta", "name": "Lucas Paquetá", "position": "MIDFIELDER", "shirtNumber": 11, "rating": 82},
+        {"id": "ward-prowse", "name": "James Ward-Prowse", "position": "MIDFIELDER", "shirtNumber": 7, "rating": 80},
+        {"id": "soucek", "name": "Tomáš Souček", "position": "MIDFIELDER", "shirtNumber": 28, "rating": 78},
+        {"id": "bowen", "name": "Jarrod Bowen", "position": "FORWARD", "shirtNumber": 20, "rating": 82},
+        {"id": "antonio", "name": "Michail Antonio", "position": "FORWARD", "shirtNumber": 9, "rating": 78},
+        {"id": "kudus", "name": "Mohammed Kudus", "position": "FORWARD", "shirtNumber": 14, "rating": 80}
+      ]
+    },
+    {
+      "id": "crystal-palace", "name": "Crystal Palace", "shortName": "CRY",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t31.svg",
+      "strength": {"attack": 76, "midfield": 76, "defense": 76, "goalkeeper": 78},
+      "players": [
+        {"id": "henderson", "name": "Dean Henderson", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 78},
+        {"id": "guehi", "name": "Marc Guéhi", "position": "DEFENDER", "shirtNumber": 6, "rating": 82},
+        {"id": "andersen", "name": "Joachim Andersen", "position": "DEFENDER", "shirtNumber": 16, "rating": 80},
+        {"id": "mitchell", "name": "Tyrick Mitchell", "position": "DEFENDER", "shirtNumber": 3, "rating": 78},
+        {"id": "ward", "name": "Joel Ward", "position": "DEFENDER", "shirtNumber": 2, "rating": 76},
+        {"id": "lerma", "name": "Jefferson Lerma", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 76},
+        {"id": "doucoure", "name": "Cheick Doucouré", "position": "MIDFIELDER", "shirtNumber": 28, "rating": 78},
+        {"id": "hughes", "name": "Will Hughes", "position": "MIDFIELDER", "shirtNumber": 19, "rating": 76},
+        {"id": "eze", "name": "Eberechi Eze", "position": "FORWARD", "shirtNumber": 10, "rating": 82},
+        {"id": "olise", "name": "Michael Olise", "position": "FORWARD", "shirtNumber": 7, "rating": 82},
+        {"id": "mateta", "name": "Jean-Philippe Mateta", "position": "FORWARD", "shirtNumber": 14, "rating": 78}
+      ]
+    },
+    {
+      "id": "brentford", "name": "Brentford", "shortName": "BRE",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t94.svg",
+      "strength": {"attack": 78, "midfield": 76, "defense": 76, "goalkeeper": 78},
+      "players": [
+        {"id": "flekken", "name": "Mark Flekken", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 78},
+        {"id": "pinnock", "name": "Ethan Pinnock", "position": "DEFENDER", "shirtNumber": 5, "rating": 78},
+        {"id": "mee", "name": "Ben Mee", "position": "DEFENDER", "shirtNumber": 16, "rating": 76},
+        {"id": "henry", "name": "Rico Henry", "position": "DEFENDER", "shirtNumber": 3, "rating": 78},
+        {"id": "ajer", "name": "Kristoffer Ajer", "position": "DEFENDER", "shirtNumber": 20, "rating": 76},
+        {"id": "norgaard", "name": "Christian Nørgaard", "position": "MIDFIELDER", "shirtNumber": 6, "rating": 78},
+        {"id": "janelt", "name": "Vitaly Janelt", "position": "MIDFIELDER", "shirtNumber": 27, "rating": 76},
+        {"id": "damsgaard", "name": "Mikkel Damsgaard", "position": "MIDFIELDER", "shirtNumber": 24, "rating": 78},
+        {"id": "mbeumo", "name": "Bryan Mbeumo", "position": "FORWARD", "shirtNumber": 19, "rating": 80},
+        {"id": "toney", "name": "Ivan Toney", "position": "FORWARD", "shirtNumber": 17, "rating": 82},
+        {"id": "wissa", "name": "Yoane Wissa", "position": "FORWARD", "shirtNumber": 11, "rating": 78}
+      ]
+    },
+    {
+      "id": "fulham", "name": "Fulham", "shortName": "FUL",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t54.svg",
+      "strength": {"attack": 76, "midfield": 76, "defense": 76, "goalkeeper": 78},
+      "players": [
+        {"id": "leno", "name": "Bernd Leno", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 80},
+        {"id": "ream", "name": "Tim Ream", "position": "DEFENDER", "shirtNumber": 13, "rating": 76},
+        {"id": "diop", "name": "Issa Diop", "position": "DEFENDER", "shirtNumber": 31, "rating": 76},
+        {"id": "tete", "name": "Kenny Tete", "position": "DEFENDER", "shirtNumber": 2, "rating": 76},
+        {"id": "robinson", "name": "Antonee Robinson", "position": "DEFENDER", "shirtNumber": 33, "rating": 78},
+        {"id": "palhinha", "name": "João Palhinha", "position": "MIDFIELDER", "shirtNumber": 26, "rating": 82},
+        {"id": "pereira", "name": "Andreas Pereira", "position": "MIDFIELDER", "shirtNumber": 18, "rating": 78},
+        {"id": "lukic", "name": "Saša Lukić", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 76},
+        {"id": "willian", "name": "Willian", "position": "FORWARD", "shirtNumber": 20, "rating": 78},
+        {"id": "muniz", "name": "Rodrigo Muniz", "position": "FORWARD", "shirtNumber": 9, "rating": 78},
+        {"id": "iwobi", "name": "Alex Iwobi", "position": "FORWARD", "shirtNumber": 17, "rating": 78}
+      ]
+    },
+    {
+      "id": "wolves", "name": "Wolverhampton Wanderers", "shortName": "WOL",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t39.svg",
+      "strength": {"attack": 74, "midfield": 74, "defense": 74, "goalkeeper": 76},
+      "players": [
+        {"id": "sa", "name": "José Sá", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 80},
+        {"id": "kilman", "name": "Max Kilman", "position": "DEFENDER", "shirtNumber": 15, "rating": 78},
+        {"id": "collins", "name": "Nathan Collins", "position": "DEFENDER", "shirtNumber": 4, "rating": 76},
+        {"id": "semedo", "name": "Nélson Semedo", "position": "DEFENDER", "shirtNumber": 22, "rating": 78},
+        {"id": "ait-nouri", "name": "Rayan Aït-Nouri", "position": "DEFENDER", "shirtNumber": 3, "rating": 78},
+        {"id": "neves", "name": "João Gomes", "position": "MIDFIELDER", "shirtNumber": 35, "rating": 78},
+        {"id": "lemina", "name": "Mario Lemina", "position": "MIDFIELDER", "shirtNumber": 5, "rating": 76},
+        {"id": "neto", "name": "Pedro Neto", "position": "MIDFIELDER", "shirtNumber": 7, "rating": 80},
+        {"id": "cunha", "name": "Matheus Cunha", "position": "FORWARD", "shirtNumber": 12, "rating": 80},
+        {"id": "hwang", "name": "Hwang Hee-chan", "position": "FORWARD", "shirtNumber": 11, "rating": 78},
+        {"id": "sarabia", "name": "Pablo Sarabia", "position": "FORWARD", "shirtNumber": 21, "rating": 78}
+      ]
+    },
+    {
+      "id": "bournemouth", "name": "AFC Bournemouth", "shortName": "BOU",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t91.svg",
+      "strength": {"attack": 74, "midfield": 74, "defense": 72, "goalkeeper": 76},
+      "players": [
+        {"id": "neto-b", "name": "Neto", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 78},
+        {"id": "senesi", "name": "Marcos Senesi", "position": "DEFENDER", "shirtNumber": 25, "rating": 76},
+        {"id": "zabarnyi", "name": "Illia Zabarnyi", "position": "DEFENDER", "shirtNumber": 13, "rating": 76},
+        {"id": "smith", "name": "Adam Smith", "position": "DEFENDER", "shirtNumber": 15, "rating": 74},
+        {"id": "kerkez", "name": "Milos Kerkez", "position": "DEFENDER", "shirtNumber": 3, "rating": 76},
+        {"id": "cook", "name": "Lewis Cook", "position": "MIDFIELDER", "shirtNumber": 4, "rating": 76},
+        {"id": "christie", "name": "Ryan Christie", "position": "MIDFIELDER", "shirtNumber": 10, "rating": 76},
+        {"id": "billing", "name": "Philip Billing", "position": "MIDFIELDER", "shirtNumber": 29, "rating": 76},
+        {"id": "solanke", "name": "Dominic Solanke", "position": "FORWARD", "shirtNumber": 9, "rating": 78},
+        {"id": "semenyo", "name": "Antoine Semenyo", "position": "FORWARD", "shirtNumber": 24, "rating": 76},
+        {"id": "kluivert", "name": "Justin Kluivert", "position": "FORWARD", "shirtNumber": 45, "rating": 76}
+      ]
+    },
+    {
+      "id": "nottm-forest", "name": "Nottingham Forest", "shortName": "NFO",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t17.svg",
+      "strength": {"attack": 74, "midfield": 74, "defense": 74, "goalkeeper": 76},
+      "players": [
+        {"id": "turner", "name": "Matt Turner", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 76},
+        {"id": "murillo", "name": "Murillo", "position": "DEFENDER", "shirtNumber": 3, "rating": 78},
+        {"id": "niakhate", "name": "Moussa Niakhaté", "position": "DEFENDER", "shirtNumber": 19, "rating": 76},
+        {"id": "williams-n", "name": "Neco Williams", "position": "DEFENDER", "shirtNumber": 7, "rating": 76},
+        {"id": "aina", "name": "Ola Aina", "position": "DEFENDER", "shirtNumber": 43, "rating": 76},
+        {"id": "yates", "name": "Ryan Yates", "position": "MIDFIELDER", "shirtNumber": 22, "rating": 76},
+        {"id": "sangare", "name": "Ibrahim Sangaré", "position": "MIDFIELDER", "shirtNumber": 6, "rating": 78},
+        {"id": "gibbs-white", "name": "Morgan Gibbs-White", "position": "MIDFIELDER", "shirtNumber": 10, "rating": 80},
+        {"id": "awoniyi", "name": "Taiwo Awoniyi", "position": "FORWARD", "shirtNumber": 9, "rating": 76},
+        {"id": "elanga", "name": "Anthony Elanga", "position": "FORWARD", "shirtNumber": 21, "rating": 76},
+        {"id": "hudson-odoi", "name": "Callum Hudson-Odoi", "position": "FORWARD", "shirtNumber": 11, "rating": 78}
+      ]
+    },
+    {
+      "id": "everton", "name": "Everton", "shortName": "EVE",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t11.svg",
+      "strength": {"attack": 72, "midfield": 72, "defense": 74, "goalkeeper": 78},
+      "players": [
+        {"id": "pickford", "name": "Jordan Pickford", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 82},
+        {"id": "tarkowski", "name": "James Tarkowski", "position": "DEFENDER", "shirtNumber": 6, "rating": 80},
+        {"id": "branthwaite", "name": "Jarrad Branthwaite", "position": "DEFENDER", "shirtNumber": 32, "rating": 78},
+        {"id": "mykolenko", "name": "Vitaliy Mykolenko", "position": "DEFENDER", "shirtNumber": 19, "rating": 76},
+        {"id": "patterson", "name": "Nathan Patterson", "position": "DEFENDER", "shirtNumber": 3, "rating": 74},
+        {"id": "onana-a", "name": "Amadou Onana", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 78},
+        {"id": "doucoure-a", "name": "Abdoulaye Doucouré", "position": "MIDFIELDER", "shirtNumber": 16, "rating": 76},
+        {"id": "harrison", "name": "Jack Harrison", "position": "MIDFIELDER", "shirtNumber": 11, "rating": 76},
+        {"id": "calvert-lewin", "name": "Dominic Calvert-Lewin", "position": "FORWARD", "shirtNumber": 9, "rating": 78},
+        {"id": "mcneil", "name": "Dwight McNeil", "position": "FORWARD", "shirtNumber": 7, "rating": 76},
+        {"id": "beto", "name": "Beto", "position": "FORWARD", "shirtNumber": 14, "rating": 74}
+      ]
+    },
+    {
+      "id": "leicester", "name": "Leicester City", "shortName": "LEI",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t13.svg",
+      "strength": {"attack": 76, "midfield": 74, "defense": 74, "goalkeeper": 78},
+      "players": [
+        {"id": "hermansen", "name": "Mads Hermansen", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 78},
+        {"id": "faes", "name": "Wout Faes", "position": "DEFENDER", "shirtNumber": 3, "rating": 78},
+        {"id": "vestergaard", "name": "Jannik Vestergaard", "position": "DEFENDER", "shirtNumber": 23, "rating": 76},
+        {"id": "justin", "name": "James Justin", "position": "DEFENDER", "shirtNumber": 2, "rating": 76},
+        {"id": "kristiansen-l", "name": "Victor Kristiansen", "position": "DEFENDER", "shirtNumber": 17, "rating": 76},
+        {"id": "ndidi", "name": "Wilfred Ndidi", "position": "MIDFIELDER", "shirtNumber": 25, "rating": 78},
+        {"id": "winks", "name": "Harry Winks", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 76},
+        {"id": "dewsbury-hall", "name": "Kiernan Dewsbury-Hall", "position": "MIDFIELDER", "shirtNumber": 22, "rating": 78},
+        {"id": "vardy", "name": "Jamie Vardy", "position": "FORWARD", "shirtNumber": 9, "rating": 78},
+        {"id": "fatawu", "name": "Abdul Fatawu", "position": "FORWARD", "shirtNumber": 7, "rating": 76},
+        {"id": "daka", "name": "Patson Daka", "position": "FORWARD", "shirtNumber": 20, "rating": 76}
+      ]
+    },
+    {
+      "id": "southampton", "name": "Southampton", "shortName": "SOU",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t20.svg",
+      "strength": {"attack": 72, "midfield": 72, "defense": 70, "goalkeeper": 74},
+      "players": [
+        {"id": "mccarthy", "name": "Alex McCarthy", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 76},
+        {"id": "bednarek", "name": "Jan Bednarek", "position": "DEFENDER", "shirtNumber": 35, "rating": 76},
+        {"id": "harwood-bellis", "name": "Taylor Harwood-Bellis", "position": "DEFENDER", "shirtNumber": 6, "rating": 76},
+        {"id": "manning", "name": "Ryan Manning", "position": "DEFENDER", "shirtNumber": 3, "rating": 74},
+        {"id": "sugawara", "name": "Yukinari Sugawara", "position": "DEFENDER", "shirtNumber": 22, "rating": 74},
+        {"id": "downes", "name": "Flynn Downes", "position": "MIDFIELDER", "shirtNumber": 4, "rating": 76},
+        {"id": "aribo", "name": "Joe Aribo", "position": "MIDFIELDER", "shirtNumber": 7, "rating": 76},
+        {"id": "lallana", "name": "Adam Lallana", "position": "MIDFIELDER", "shirtNumber": 10, "rating": 74},
+        {"id": "armstrong-a", "name": "Adam Armstrong", "position": "FORWARD", "shirtNumber": 9, "rating": 76},
+        {"id": "dibling", "name": "Tyler Dibling", "position": "FORWARD", "shirtNumber": 32, "rating": 74},
+        {"id": "brereton-diaz", "name": "Ben Brereton Díaz", "position": "FORWARD", "shirtNumber": 18, "rating": 74}
+      ]
+    },
+    {
+      "id": "ipswich", "name": "Ipswich Town", "shortName": "IPS",
+      "badgeUrl": "https://resources.premierleague.com/premierleague/badges/t40.svg",
+      "strength": {"attack": 70, "midfield": 70, "defense": 68, "goalkeeper": 72},
+      "players": [
+        {"id": "walton", "name": "Christian Walton", "position": "GOALKEEPER", "shirtNumber": 1, "rating": 74},
+        {"id": "woolfenden", "name": "Luke Woolfenden", "position": "DEFENDER", "shirtNumber": 6, "rating": 74},
+        {"id": "greaves", "name": "Jacob Greaves", "position": "DEFENDER", "shirtNumber": 4, "rating": 74},
+        {"id": "davis-l", "name": "Leif Davis", "position": "DEFENDER", "shirtNumber": 3, "rating": 74},
+        {"id": "tuanzebe", "name": "Axel Tuanzebe", "position": "DEFENDER", "shirtNumber": 5, "rating": 74},
+        {"id": "morsy", "name": "Sam Morsy", "position": "MIDFIELDER", "shirtNumber": 8, "rating": 74},
+        {"id": "luongo", "name": "Massimo Luongo", "position": "MIDFIELDER", "shirtNumber": 25, "rating": 72},
+        {"id": "phillips-k", "name": "Kalvin Phillips", "position": "MIDFIELDER", "shirtNumber": 4, "rating": 76},
+        {"id": "hutchinson-o", "name": "Omari Hutchinson", "position": "FORWARD", "shirtNumber": 20, "rating": 76},
+        {"id": "delap", "name": "Liam Delap", "position": "FORWARD", "shirtNumber": 9, "rating": 76},
+        {"id": "szmodics", "name": "Sammie Szmodics", "position": "FORWARD", "shirtNumber": 23, "rating": 76}
+      ]
+    }
+  ]
+}
+

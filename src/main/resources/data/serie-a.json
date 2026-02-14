@@ -1,0 +1,1828 @@
+{
+  "id": "serie-a",
+  "name": "Serie A",
+  "country": "Italy",
+  "logoUrl": "https://r2.thesportsdb.com/images/media/league/badge/ocy2fe1566216901.png",
+  "teams": [
+    {
+      "id": "inter",
+      "name": "Inter Milan",
+      "shortName": "INT",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
+      "strength": {
+        "attack": 88,
+        "midfield": 86,
+        "defense": 88,
+        "goalkeeper": 86
+      },
+      "players": [
+        {
+          "id": "sommer",
+          "name": "Yann Sommer",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 84
+        },
+        {
+          "id": "bastoni",
+          "name": "Alessandro Bastoni",
+          "position": "DEFENDER",
+          "shirtNumber": 95,
+          "rating": 86
+        },
+        {
+          "id": "acerbi",
+          "name": "Francesco Acerbi",
+          "position": "DEFENDER",
+          "shirtNumber": 15,
+          "rating": 82
+        },
+        {
+          "id": "pavard",
+          "name": "Benjamin Pavard",
+          "position": "DEFENDER",
+          "shirtNumber": 28,
+          "rating": 84
+        },
+        {
+          "id": "dimarco",
+          "name": "Federico Dimarco",
+          "position": "DEFENDER",
+          "shirtNumber": 32,
+          "rating": 84
+        },
+        {
+          "id": "barella",
+          "name": "Nicol\u00f2 Barella",
+          "position": "MIDFIELDER",
+          "shirtNumber": 23,
+          "rating": 87
+        },
+        {
+          "id": "calhanoglu",
+          "name": "Hakan \u00c7alhano\u011flu",
+          "position": "MIDFIELDER",
+          "shirtNumber": 20,
+          "rating": 84
+        },
+        {
+          "id": "mkhitaryan",
+          "name": "Henrikh Mkhitaryan",
+          "position": "MIDFIELDER",
+          "shirtNumber": 22,
+          "rating": 82
+        },
+        {
+          "id": "lautaro",
+          "name": "Lautaro Mart\u00ednez",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 88
+        },
+        {
+          "id": "thuram",
+          "name": "Marcus Thuram",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 84
+        },
+        {
+          "id": "arnautovic",
+          "name": "Marko Arnautovi\u0107",
+          "position": "FORWARD",
+          "shirtNumber": 8,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "juventus",
+      "name": "Juventus",
+      "shortName": "JUV",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/uxf0gr1742983727.png",
+      "strength": {
+        "attack": 84,
+        "midfield": 82,
+        "defense": 84,
+        "goalkeeper": 84
+      },
+      "players": [
+        {
+          "id": "szczesny",
+          "name": "Wojciech Szcz\u0119sny",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 84
+        },
+        {
+          "id": "bremer",
+          "name": "Bremer",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 84
+        },
+        {
+          "id": "gatti",
+          "name": "Federico Gatti",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 80
+        },
+        {
+          "id": "danilo",
+          "name": "Danilo",
+          "position": "DEFENDER",
+          "shirtNumber": 6,
+          "rating": 80
+        },
+        {
+          "id": "cambiaso",
+          "name": "Andrea Cambiaso",
+          "position": "DEFENDER",
+          "shirtNumber": 27,
+          "rating": 80
+        },
+        {
+          "id": "locatelli",
+          "name": "Manuel Locatelli",
+          "position": "MIDFIELDER",
+          "shirtNumber": 5,
+          "rating": 82
+        },
+        {
+          "id": "rabiot",
+          "name": "Adrien Rabiot",
+          "position": "MIDFIELDER",
+          "shirtNumber": 25,
+          "rating": 82
+        },
+        {
+          "id": "mckennie",
+          "name": "Weston McKennie",
+          "position": "MIDFIELDER",
+          "shirtNumber": 14,
+          "rating": 78
+        },
+        {
+          "id": "vlahovic",
+          "name": "Du\u0161an Vlahovi\u0107",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 85
+        },
+        {
+          "id": "chiesa",
+          "name": "Federico Chiesa",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 84
+        },
+        {
+          "id": "yildiz",
+          "name": "Kenan Y\u0131ld\u0131z",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "shortName": "MIL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
+      "strength": {
+        "attack": 84,
+        "midfield": 82,
+        "defense": 82,
+        "goalkeeper": 86
+      },
+      "players": [
+        {
+          "id": "maignan",
+          "name": "Mike Maignan",
+          "position": "GOALKEEPER",
+          "shirtNumber": 16,
+          "rating": 88
+        },
+        {
+          "id": "tomori",
+          "name": "Fikayo Tomori",
+          "position": "DEFENDER",
+          "shirtNumber": 23,
+          "rating": 82
+        },
+        {
+          "id": "thiaw",
+          "name": "Malick Thiaw",
+          "position": "DEFENDER",
+          "shirtNumber": 28,
+          "rating": 80
+        },
+        {
+          "id": "calabria",
+          "name": "Davide Calabria",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 80
+        },
+        {
+          "id": "theo",
+          "name": "Theo Hern\u00e1ndez",
+          "position": "DEFENDER",
+          "shirtNumber": 19,
+          "rating": 86
+        },
+        {
+          "id": "bennacer",
+          "name": "Isma\u00ebl Bennacer",
+          "position": "MIDFIELDER",
+          "shirtNumber": 4,
+          "rating": 82
+        },
+        {
+          "id": "reijnders",
+          "name": "Tijjani Reijnders",
+          "position": "MIDFIELDER",
+          "shirtNumber": 14,
+          "rating": 80
+        },
+        {
+          "id": "loftus-cheek",
+          "name": "Ruben Loftus-Cheek",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 80
+        },
+        {
+          "id": "leao",
+          "name": "Rafael Le\u00e3o",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 86
+        },
+        {
+          "id": "pulisic",
+          "name": "Christian Pulisic",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 82
+        },
+        {
+          "id": "giroud",
+          "name": "Olivier Giroud",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 80
+        }
+      ]
+    },
+    {
+      "id": "napoli",
+      "name": "SSC Napoli",
+      "shortName": "NAP",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/l8qyxv1742982541.png",
+      "strength": {
+        "attack": 84,
+        "midfield": 82,
+        "defense": 80,
+        "goalkeeper": 82
+      },
+      "players": [
+        {
+          "id": "meret",
+          "name": "Alex Meret",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 82
+        },
+        {
+          "id": "rrahmani",
+          "name": "Amir Rrahmani",
+          "position": "DEFENDER",
+          "shirtNumber": 13,
+          "rating": 80
+        },
+        {
+          "id": "natan",
+          "name": "Natan",
+          "position": "DEFENDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "di-lorenzo",
+          "name": "Giovanni Di Lorenzo",
+          "position": "DEFENDER",
+          "shirtNumber": 22,
+          "rating": 82
+        },
+        {
+          "id": "olivera",
+          "name": "Math\u00edas Olivera",
+          "position": "DEFENDER",
+          "shirtNumber": 17,
+          "rating": 78
+        },
+        {
+          "id": "lobotka",
+          "name": "Stanislav Lobotka",
+          "position": "MIDFIELDER",
+          "shirtNumber": 68,
+          "rating": 84
+        },
+        {
+          "id": "anguissa",
+          "name": "Andr\u00e9-Frank Zambo Anguissa",
+          "position": "MIDFIELDER",
+          "shirtNumber": 99,
+          "rating": 82
+        },
+        {
+          "id": "zielinski",
+          "name": "Piotr Zieli\u0144ski",
+          "position": "MIDFIELDER",
+          "shirtNumber": 20,
+          "rating": 82
+        },
+        {
+          "id": "osimhen",
+          "name": "Victor Osimhen",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 88
+        },
+        {
+          "id": "kvaratskhelia",
+          "name": "Khvicha Kvaratskhelia",
+          "position": "FORWARD",
+          "shirtNumber": 77,
+          "rating": 86
+        },
+        {
+          "id": "politano",
+          "name": "Matteo Politano",
+          "position": "FORWARD",
+          "shirtNumber": 21,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "roma",
+      "name": "AS Roma",
+      "shortName": "ROM",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/jwro2s1760820674.png",
+      "strength": {
+        "attack": 80,
+        "midfield": 78,
+        "defense": 78,
+        "goalkeeper": 80
+      },
+      "players": [
+        {
+          "id": "svilar",
+          "name": "Mile Svilar",
+          "position": "GOALKEEPER",
+          "shirtNumber": 99,
+          "rating": 78
+        },
+        {
+          "id": "mancini",
+          "name": "Gianluca Mancini",
+          "position": "DEFENDER",
+          "shirtNumber": 23,
+          "rating": 80
+        },
+        {
+          "id": "smalling",
+          "name": "Chris Smalling",
+          "position": "DEFENDER",
+          "shirtNumber": 6,
+          "rating": 78
+        },
+        {
+          "id": "karsdorp",
+          "name": "Rick Karsdorp",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "spinazzola",
+          "name": "Leonardo Spinazzola",
+          "position": "DEFENDER",
+          "shirtNumber": 37,
+          "rating": 78
+        },
+        {
+          "id": "cristante",
+          "name": "Bryan Cristante",
+          "position": "MIDFIELDER",
+          "shirtNumber": 4,
+          "rating": 80
+        },
+        {
+          "id": "paredes",
+          "name": "Leandro Paredes",
+          "position": "MIDFIELDER",
+          "shirtNumber": 16,
+          "rating": 80
+        },
+        {
+          "id": "pellegrini",
+          "name": "Lorenzo Pellegrini",
+          "position": "MIDFIELDER",
+          "shirtNumber": 7,
+          "rating": 82
+        },
+        {
+          "id": "dybala",
+          "name": "Paulo Dybala",
+          "position": "FORWARD",
+          "shirtNumber": 21,
+          "rating": 85
+        },
+        {
+          "id": "lukaku",
+          "name": "Romelu Lukaku",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 82
+        },
+        {
+          "id": "el-shaarawy",
+          "name": "Stephan El Shaarawy",
+          "position": "FORWARD",
+          "shirtNumber": 92,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "lazio",
+      "name": "SS Lazio",
+      "shortName": "LAZ",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/rwqyvs1448806608.png",
+      "strength": {
+        "attack": 80,
+        "midfield": 78,
+        "defense": 76,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "provedel",
+          "name": "Ivan Provedel",
+          "position": "GOALKEEPER",
+          "shirtNumber": 94,
+          "rating": 80
+        },
+        {
+          "id": "romagnoli",
+          "name": "Alessio Romagnoli",
+          "position": "DEFENDER",
+          "shirtNumber": 13,
+          "rating": 78
+        },
+        {
+          "id": "casale",
+          "name": "Nicol\u00f2 Casale",
+          "position": "DEFENDER",
+          "shirtNumber": 15,
+          "rating": 76
+        },
+        {
+          "id": "marusic",
+          "name": "Adam Maru\u0161i\u0107",
+          "position": "DEFENDER",
+          "shirtNumber": 77,
+          "rating": 76
+        },
+        {
+          "id": "lazzari",
+          "name": "Manuel Lazzari",
+          "position": "DEFENDER",
+          "shirtNumber": 29,
+          "rating": 78
+        },
+        {
+          "id": "cataldi",
+          "name": "Danilo Cataldi",
+          "position": "MIDFIELDER",
+          "shirtNumber": 32,
+          "rating": 78
+        },
+        {
+          "id": "guendouzi",
+          "name": "Matt\u00e9o Guendouzi",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 80
+        },
+        {
+          "id": "luis-alberto",
+          "name": "Luis Alberto",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 82
+        },
+        {
+          "id": "immobile",
+          "name": "Ciro Immobile",
+          "position": "FORWARD",
+          "shirtNumber": 17,
+          "rating": 84
+        },
+        {
+          "id": "felipe-anderson",
+          "name": "Felipe Anderson",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 78
+        },
+        {
+          "id": "pedro",
+          "name": "Pedro",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta BC",
+      "shortName": "ATA",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/lrvxg71534873930.png",
+      "strength": {
+        "attack": 82,
+        "midfield": 80,
+        "defense": 78,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "musso",
+          "name": "Juan Musso",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 80
+        },
+        {
+          "id": "toloi",
+          "name": "Rafael Tol\u00f3i",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 78
+        },
+        {
+          "id": "scalvini",
+          "name": "Giorgio Scalvini",
+          "position": "DEFENDER",
+          "shirtNumber": 42,
+          "rating": 80
+        },
+        {
+          "id": "kolasinac",
+          "name": "Sead Kola\u0161inac",
+          "position": "DEFENDER",
+          "shirtNumber": 23,
+          "rating": 76
+        },
+        {
+          "id": "hateboer",
+          "name": "Hans Hateboer",
+          "position": "DEFENDER",
+          "shirtNumber": 33,
+          "rating": 76
+        },
+        {
+          "id": "de-roon",
+          "name": "Marten de Roon",
+          "position": "MIDFIELDER",
+          "shirtNumber": 15,
+          "rating": 80
+        },
+        {
+          "id": "ederson-a",
+          "name": "Ederson",
+          "position": "MIDFIELDER",
+          "shirtNumber": 13,
+          "rating": 82
+        },
+        {
+          "id": "koopmeiners",
+          "name": "Teun Koopmeiners",
+          "position": "MIDFIELDER",
+          "shirtNumber": 7,
+          "rating": 84
+        },
+        {
+          "id": "lookman",
+          "name": "Ademola Lookman",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 82
+        },
+        {
+          "id": "scamacca",
+          "name": "Gianluca Scamacca",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 80
+        },
+        {
+          "id": "de-ketelaere",
+          "name": "Charles De Ketelaere",
+          "position": "FORWARD",
+          "shirtNumber": 17,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "fiorentina",
+      "name": "ACF Fiorentina",
+      "shortName": "FIO",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/hc8nhu1656098030.png",
+      "strength": {
+        "attack": 78,
+        "midfield": 78,
+        "defense": 76,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "terracciano",
+          "name": "Pietro Terracciano",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "milenkovic",
+          "name": "Nikola Milenkovi\u0107",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 80
+        },
+        {
+          "id": "quarta",
+          "name": "Lucas Mart\u00ednez Quarta",
+          "position": "DEFENDER",
+          "shirtNumber": 28,
+          "rating": 78
+        },
+        {
+          "id": "dodo",
+          "name": "Dod\u00f4",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 78
+        },
+        {
+          "id": "biraghi",
+          "name": "Cristiano Biraghi",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 78
+        },
+        {
+          "id": "amrabat",
+          "name": "Sofyan Amrabat",
+          "position": "MIDFIELDER",
+          "shirtNumber": 34,
+          "rating": 80
+        },
+        {
+          "id": "bonaventura",
+          "name": "Giacomo Bonaventura",
+          "position": "MIDFIELDER",
+          "shirtNumber": 5,
+          "rating": 78
+        },
+        {
+          "id": "barak",
+          "name": "Anton\u00edn Bar\u00e1k",
+          "position": "MIDFIELDER",
+          "shirtNumber": 72,
+          "rating": 78
+        },
+        {
+          "id": "gonzalez",
+          "name": "Nico Gonz\u00e1lez",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 80
+        },
+        {
+          "id": "beltran",
+          "name": "Lucas Beltr\u00e1n",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "kouame",
+          "name": "Christian Kouam\u00e9",
+          "position": "FORWARD",
+          "shirtNumber": 99,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "bologna",
+      "name": "Bologna FC",
+      "shortName": "BOL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/2qi1u31655592366.png",
+      "strength": {
+        "attack": 76,
+        "midfield": 76,
+        "defense": 76,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "skorupski",
+          "name": "\u0141ukasz Skorupski",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "beukema",
+          "name": "Sam Beukema",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 78
+        },
+        {
+          "id": "lucumi",
+          "name": "Jhon Lucum\u00ed",
+          "position": "DEFENDER",
+          "shirtNumber": 26,
+          "rating": 78
+        },
+        {
+          "id": "posch",
+          "name": "Stefan Posch",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "kristiansen",
+          "name": "Victor Kristiansen",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "freuler",
+          "name": "Remo Freuler",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "ferguson",
+          "name": "Lewis Ferguson",
+          "position": "MIDFIELDER",
+          "shirtNumber": 14,
+          "rating": 78
+        },
+        {
+          "id": "aebischer",
+          "name": "Michel Aebischer",
+          "position": "MIDFIELDER",
+          "shirtNumber": 20,
+          "rating": 76
+        },
+        {
+          "id": "orsolini",
+          "name": "Riccardo Orsolini",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 78
+        },
+        {
+          "id": "zirkzee",
+          "name": "Joshua Zirkzee",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "saelemaekers",
+          "name": "Alexis Saelemaekers",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "torino",
+      "name": "Torino FC",
+      "shortName": "TOR",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/xxprty1448806802.png",
+      "strength": {
+        "attack": 74,
+        "midfield": 74,
+        "defense": 76,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "milinkovic",
+          "name": "Vanja Milinkovi\u0107-Savi\u0107",
+          "position": "GOALKEEPER",
+          "shirtNumber": 32,
+          "rating": 76
+        },
+        {
+          "id": "buongiorno",
+          "name": "Alessandro Buongiorno",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 78
+        },
+        {
+          "id": "rodriguez",
+          "name": "Ricardo Rodr\u00edguez",
+          "position": "DEFENDER",
+          "shirtNumber": 13,
+          "rating": 76
+        },
+        {
+          "id": "bellanova",
+          "name": "Raoul Bellanova",
+          "position": "DEFENDER",
+          "shirtNumber": 19,
+          "rating": 76
+        },
+        {
+          "id": "lazaro-t",
+          "name": "Valentino Lazaro",
+          "position": "DEFENDER",
+          "shirtNumber": 20,
+          "rating": 74
+        },
+        {
+          "id": "ricci",
+          "name": "Samuele Ricci",
+          "position": "MIDFIELDER",
+          "shirtNumber": 28,
+          "rating": 78
+        },
+        {
+          "id": "ilic",
+          "name": "Ivan Ili\u0107",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "vlasic",
+          "name": "Nikola Vla\u0161i\u0107",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 78
+        },
+        {
+          "id": "zapata",
+          "name": "Duv\u00e1n Zapata",
+          "position": "FORWARD",
+          "shirtNumber": 91,
+          "rating": 80
+        },
+        {
+          "id": "sanabria",
+          "name": "Antonio Sanabria",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "radonjic",
+          "name": "Nemanja Radonji\u0107",
+          "position": "FORWARD",
+          "shirtNumber": 49,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "monza",
+      "name": "AC Monza",
+      "shortName": "MON",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/bxearg1603170113.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 72,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "di-gregorio",
+          "name": "Michele Di Gregorio",
+          "position": "GOALKEEPER",
+          "shirtNumber": 16,
+          "rating": 78
+        },
+        {
+          "id": "izzo",
+          "name": "Armando Izzo",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "pablo-mari",
+          "name": "Pablo Mar\u00ed",
+          "position": "DEFENDER",
+          "shirtNumber": 22,
+          "rating": 76
+        },
+        {
+          "id": "birindelli",
+          "name": "Samuele Birindelli",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "carlos-augusto",
+          "name": "Carlos Augusto",
+          "position": "DEFENDER",
+          "shirtNumber": 30,
+          "rating": 76
+        },
+        {
+          "id": "pessina",
+          "name": "Matteo Pessina",
+          "position": "MIDFIELDER",
+          "shirtNumber": 32,
+          "rating": 78
+        },
+        {
+          "id": "bondo",
+          "name": "Warren Bondo",
+          "position": "MIDFIELDER",
+          "shirtNumber": 38,
+          "rating": 74
+        },
+        {
+          "id": "colpani",
+          "name": "Andrea Colpani",
+          "position": "MIDFIELDER",
+          "shirtNumber": 28,
+          "rating": 76
+        },
+        {
+          "id": "mota",
+          "name": "Dany Mota",
+          "position": "FORWARD",
+          "shirtNumber": 47,
+          "rating": 76
+        },
+        {
+          "id": "caprari",
+          "name": "Gianluca Caprari",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "djuric",
+          "name": "Milan \u0110uri\u0107",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "udinese",
+      "name": "Udinese Calcio",
+      "shortName": "UDI",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/vwvstr1448806811.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 74,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "silvestri",
+          "name": "Marco Silvestri",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "bijol",
+          "name": "Jaka Bijol",
+          "position": "DEFENDER",
+          "shirtNumber": 29,
+          "rating": 78
+        },
+        {
+          "id": "perez",
+          "name": "Nehuen P\u00e9rez",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "ebosele",
+          "name": "Festy Ebosele",
+          "position": "DEFENDER",
+          "shirtNumber": 77,
+          "rating": 74
+        },
+        {
+          "id": "kamara",
+          "name": "Hassane Kamara",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "walace",
+          "name": "Walace",
+          "position": "MIDFIELDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "lovric",
+          "name": "Sandi Lovri\u0107",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "samardzic",
+          "name": "Lazar Samard\u017ei\u0107",
+          "position": "MIDFIELDER",
+          "shirtNumber": 24,
+          "rating": 78
+        },
+        {
+          "id": "success",
+          "name": "Isaac Success",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 74
+        },
+        {
+          "id": "lucca",
+          "name": "Lorenzo Lucca",
+          "position": "FORWARD",
+          "shirtNumber": 17,
+          "rating": 76
+        },
+        {
+          "id": "thauvin",
+          "name": "Florian Thauvin",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "como",
+      "name": "Como 1907",
+      "shortName": "COM",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/02x81t1627405841.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 70,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "reina",
+          "name": "Pepe Reina",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "dossena-c",
+          "name": "Alberto Dossena",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "goldaniga",
+          "name": "Edoardo Goldaniga",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "iovine",
+          "name": "Ignace Van der Brempt",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "moreno",
+          "name": "Alberto Moreno",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "sergi-roberto",
+          "name": "Sergi Roberto",
+          "position": "MIDFIELDER",
+          "shirtNumber": 20,
+          "rating": 78
+        },
+        {
+          "id": "perrone",
+          "name": "M\u00e1ximo Perrone",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "paz",
+          "name": "Nico Paz",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 78
+        },
+        {
+          "id": "cutrone",
+          "name": "Patrick Cutrone",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "fadera",
+          "name": "Alieu Fadera",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "strefezza",
+          "name": "Gabriel Strefezza",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "genoa",
+      "name": "Genoa CFC",
+      "shortName": "GEN",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/52s8dn1655553600.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 72,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "martinez-j",
+          "name": "Josep Mart\u00ednez",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "dragusin",
+          "name": "Radu Dr\u0103gu\u0219in",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "bani",
+          "name": "Mattia Bani",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "sabelli",
+          "name": "Stefano Sabelli",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "martin",
+          "name": "Aaron Martin",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "badelj",
+          "name": "Milan Badelj",
+          "position": "MIDFIELDER",
+          "shirtNumber": 47,
+          "rating": 76
+        },
+        {
+          "id": "strootman",
+          "name": "Kevin Strootman",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "malinovskyi",
+          "name": "Ruslan Malinovskyi",
+          "position": "MIDFIELDER",
+          "shirtNumber": 18,
+          "rating": 78
+        },
+        {
+          "id": "gudmundsson",
+          "name": "Albert Gu\u00f0mundsson",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 80
+        },
+        {
+          "id": "retegui",
+          "name": "Mateo Retegui",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "messias",
+          "name": "Junior Messias",
+          "position": "FORWARD",
+          "shirtNumber": 30,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "lecce",
+      "name": "US Lecce",
+      "shortName": "LEC",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/j4vznr1567365249.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 70,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "falcone",
+          "name": "Wladimiro Falcone",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "baschirotto",
+          "name": "Federico Baschirotto",
+          "position": "DEFENDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "pongracic",
+          "name": "Marin Pongra\u010di\u0107",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "gallo",
+          "name": "Antonino Gallo",
+          "position": "DEFENDER",
+          "shirtNumber": 25,
+          "rating": 74
+        },
+        {
+          "id": "gendrey",
+          "name": "Valentin Gendrey",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "hjulmand",
+          "name": "Morten Hjulmand",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "ramadani",
+          "name": "Ylber Ramadani",
+          "position": "MIDFIELDER",
+          "shirtNumber": 20,
+          "rating": 74
+        },
+        {
+          "id": "oudin",
+          "name": "R\u00e9mi Oudin",
+          "position": "MIDFIELDER",
+          "shirtNumber": 7,
+          "rating": 74
+        },
+        {
+          "id": "krstovic",
+          "name": "Nikola Krstovi\u0107",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "banda",
+          "name": "Lameck Banda",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        },
+        {
+          "id": "almqvist",
+          "name": "Pontus Almqvist",
+          "position": "FORWARD",
+          "shirtNumber": 17,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "empoli",
+      "name": "Empoli FC",
+      "shortName": "EMP",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/c1ie6b1622561483.png",
+      "strength": {
+        "attack": 68,
+        "midfield": 68,
+        "defense": 70,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "caprile",
+          "name": "Elia Caprile",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 74
+        },
+        {
+          "id": "ismajli",
+          "name": "Ardian Ismajli",
+          "position": "DEFENDER",
+          "shirtNumber": 34,
+          "rating": 76
+        },
+        {
+          "id": "luperto",
+          "name": "Sebastiano Luperto",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "ebuehi",
+          "name": "Tyronne Ebuehi",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 72
+        },
+        {
+          "id": "parisi",
+          "name": "Fabiano Parisi",
+          "position": "DEFENDER",
+          "shirtNumber": 65,
+          "rating": 74
+        },
+        {
+          "id": "grassi",
+          "name": "Alberto Grassi",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "marin",
+          "name": "R\u0103zvan Marin",
+          "position": "MIDFIELDER",
+          "shirtNumber": 21,
+          "rating": 76
+        },
+        {
+          "id": "fazzini",
+          "name": "Jacopo Fazzini",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 74
+        },
+        {
+          "id": "caputo",
+          "name": "Francesco Caputo",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 74
+        },
+        {
+          "id": "cancellieri",
+          "name": "Matteo Cancellieri",
+          "position": "FORWARD",
+          "shirtNumber": 22,
+          "rating": 72
+        },
+        {
+          "id": "destro",
+          "name": "Mattia Destro",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 72
+        }
+      ]
+    },
+    {
+      "id": "venezia",
+      "name": "Venezia FC",
+      "shortName": "VEN",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/95fg4n1656696080.png",
+      "strength": {
+        "attack": 68,
+        "midfield": 68,
+        "defense": 68,
+        "goalkeeper": 70
+      },
+      "players": [
+        {
+          "id": "stankovic",
+          "name": "Filip Stankovi\u0107",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 74
+        },
+        {
+          "id": "idzes",
+          "name": "Jay Idzes",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "svoboda",
+          "name": "Michael Svoboda",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "candela",
+          "name": "Antonio Candela",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 72
+        },
+        {
+          "id": "zampano",
+          "name": "Ridgeciano Haps",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 72
+        },
+        {
+          "id": "duncan",
+          "name": "Alfred Duncan",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "nicolussi",
+          "name": "Hans Nicolussi Caviglia",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "busio",
+          "name": "Gianluca Busio",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "pohjanpalo",
+          "name": "Joel Pohjanpalo",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "oristanio",
+          "name": "Gaetano Oristanio",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 74
+        },
+        {
+          "id": "gytkjaer",
+          "name": "Christian Gytkj\u00e6r",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "verona",
+      "name": "Hellas Verona",
+      "shortName": "VER",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/p6camf1593457737.png",
+      "strength": {
+        "attack": 68,
+        "midfield": 68,
+        "defense": 68,
+        "goalkeeper": 70
+      },
+      "players": [
+        {
+          "id": "montipo",
+          "name": "Lorenzo Montip\u00f2",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "hien",
+          "name": "Isak Hien",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "magnani",
+          "name": "Giangiacomo Magnani",
+          "position": "DEFENDER",
+          "shirtNumber": 15,
+          "rating": 72
+        },
+        {
+          "id": "faraoni",
+          "name": "Davide Faraoni",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "doig",
+          "name": "Josh Doig",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "hongla",
+          "name": "Martin Hongla",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "serdar",
+          "name": "Suat Serdar",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "folorunsho",
+          "name": "Michael Folorunsho",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 74
+        },
+        {
+          "id": "ngonge",
+          "name": "Cyril Ngonge",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        },
+        {
+          "id": "henry",
+          "name": "Thomas Henry",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 74
+        },
+        {
+          "id": "djuric-v",
+          "name": "Darko Lazovi\u0107",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "cagliari",
+      "name": "Cagliari Calcio",
+      "shortName": "CAG",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/wvsvxt1447534471.png",
+      "strength": {
+        "attack": 68,
+        "midfield": 68,
+        "defense": 68,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "scuffet",
+          "name": "Simone Scuffet",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 74
+        },
+        {
+          "id": "mina",
+          "name": "Yerry Mina",
+          "position": "DEFENDER",
+          "shirtNumber": 13,
+          "rating": 78
+        },
+        {
+          "id": "dossena",
+          "name": "Alberto Dossena",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "zappa",
+          "name": "Gabriele Zappa",
+          "position": "DEFENDER",
+          "shirtNumber": 28,
+          "rating": 74
+        },
+        {
+          "id": "augello",
+          "name": "Tommaso Augello",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "nandez",
+          "name": "Nahitan N\u00e1ndez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 18,
+          "rating": 76
+        },
+        {
+          "id": "makoumbou",
+          "name": "Antoine Makoumbou",
+          "position": "MIDFIELDER",
+          "shirtNumber": 29,
+          "rating": 74
+        },
+        {
+          "id": "jankto",
+          "name": "Jakub Jankto",
+          "position": "MIDFIELDER",
+          "shirtNumber": 7,
+          "rating": 74
+        },
+        {
+          "id": "lapadula",
+          "name": "Gianluca Lapadula",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "luvumbo",
+          "name": "Zito Luvumbo",
+          "position": "FORWARD",
+          "shirtNumber": 77,
+          "rating": 76
+        },
+        {
+          "id": "shomurodov",
+          "name": "Eldor Shomurodov",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "parma",
+      "name": "Parma Calcio",
+      "shortName": "PAR",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/6yiaxs1627406063.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 68,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "suzuki",
+          "name": "Zion Suzuki",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "delprato",
+          "name": "Enrico Delprato",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "circati",
+          "name": "Alessandro Circati",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "coulibaly-w",
+          "name": "Woyo Coulibaly",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 72
+        },
+        {
+          "id": "valeri",
+          "name": "Emanuele Valeri",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "sohm",
+          "name": "Simon Sohm",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "estevez",
+          "name": "Nahuel Est\u00e9vez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "bernabe",
+          "name": "Adri\u00e1n Bernab\u00e9",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 78
+        },
+        {
+          "id": "bonny",
+          "name": "Ange-Yoan Bonny",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "man",
+          "name": "Dennis Man",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "mihaila",
+          "name": "Valentin Mih\u0103il\u0103",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1828 @@
+{
+  "id": "la-liga",
+  "name": "La Liga",
+  "country": "Spain",
+  "logoUrl": "https://r2.thesportsdb.com/images/media/league/badge/7onmyv1534768460.png",
+  "teams": [
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "RMA",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png",
+      "strength": {
+        "attack": 92,
+        "midfield": 90,
+        "defense": 88,
+        "goalkeeper": 90
+      },
+      "players": [
+        {
+          "id": "courtois",
+          "name": "Thibaut Courtois",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 90
+        },
+        {
+          "id": "militao",
+          "name": "\u00c9der Milit\u00e3o",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 84
+        },
+        {
+          "id": "rudiger",
+          "name": "Antonio R\u00fcdiger",
+          "position": "DEFENDER",
+          "shirtNumber": 22,
+          "rating": 85
+        },
+        {
+          "id": "carvajal",
+          "name": "Dani Carvajal",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 85
+        },
+        {
+          "id": "mendy",
+          "name": "Ferland Mendy",
+          "position": "DEFENDER",
+          "shirtNumber": 23,
+          "rating": 82
+        },
+        {
+          "id": "bellingham",
+          "name": "Jude Bellingham",
+          "position": "MIDFIELDER",
+          "shirtNumber": 5,
+          "rating": 89
+        },
+        {
+          "id": "valverde",
+          "name": "Federico Valverde",
+          "position": "MIDFIELDER",
+          "shirtNumber": 15,
+          "rating": 87
+        },
+        {
+          "id": "tchouameni",
+          "name": "Aur\u00e9lien Tchouam\u00e9ni",
+          "position": "MIDFIELDER",
+          "shirtNumber": 18,
+          "rating": 84
+        },
+        {
+          "id": "vinicius",
+          "name": "Vin\u00edcius J\u00fanior",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 91
+        },
+        {
+          "id": "rodrygo",
+          "name": "Rodrygo",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 85
+        },
+        {
+          "id": "joselu",
+          "name": "Joselu",
+          "position": "FORWARD",
+          "shirtNumber": 14,
+          "rating": 80
+        }
+      ]
+    },
+    {
+      "id": "barcelona",
+      "name": "FC Barcelona",
+      "shortName": "BAR",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
+      "strength": {
+        "attack": 88,
+        "midfield": 86,
+        "defense": 82,
+        "goalkeeper": 84
+      },
+      "players": [
+        {
+          "id": "ter-stegen",
+          "name": "Marc-Andr\u00e9 ter Stegen",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 87
+        },
+        {
+          "id": "araujo",
+          "name": "Ronald Ara\u00fajo",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 85
+        },
+        {
+          "id": "kounde",
+          "name": "Jules Kound\u00e9",
+          "position": "DEFENDER",
+          "shirtNumber": 23,
+          "rating": 84
+        },
+        {
+          "id": "balde",
+          "name": "Alejandro Balde",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 80
+        },
+        {
+          "id": "cancelo",
+          "name": "Jo\u00e3o Cancelo",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 84
+        },
+        {
+          "id": "pedri",
+          "name": "Pedri",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 87
+        },
+        {
+          "id": "gavi",
+          "name": "Gavi",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 82
+        },
+        {
+          "id": "de-jong",
+          "name": "Frenkie de Jong",
+          "position": "MIDFIELDER",
+          "shirtNumber": 21,
+          "rating": 84
+        },
+        {
+          "id": "yamal",
+          "name": "Lamine Yamal",
+          "position": "FORWARD",
+          "shirtNumber": 19,
+          "rating": 82
+        },
+        {
+          "id": "lewandowski",
+          "name": "Robert Lewandowski",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 88
+        },
+        {
+          "id": "raphinha",
+          "name": "Raphinha",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 84
+        }
+      ]
+    },
+    {
+      "id": "atletico-madrid",
+      "name": "Atl\u00e9tico Madrid",
+      "shortName": "ATM",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/0ulh3q1719984315.png",
+      "strength": {
+        "attack": 84,
+        "midfield": 82,
+        "defense": 86,
+        "goalkeeper": 86
+      },
+      "players": [
+        {
+          "id": "oblak",
+          "name": "Jan Oblak",
+          "position": "GOALKEEPER",
+          "shirtNumber": 13,
+          "rating": 88
+        },
+        {
+          "id": "savic",
+          "name": "Stefan Savi\u0107",
+          "position": "DEFENDER",
+          "shirtNumber": 15,
+          "rating": 80
+        },
+        {
+          "id": "gimenez",
+          "name": "Jos\u00e9 Gim\u00e9nez",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 82
+        },
+        {
+          "id": "hermoso",
+          "name": "Mario Hermoso",
+          "position": "DEFENDER",
+          "shirtNumber": 22,
+          "rating": 78
+        },
+        {
+          "id": "llorente",
+          "name": "Marcos Llorente",
+          "position": "DEFENDER",
+          "shirtNumber": 14,
+          "rating": 82
+        },
+        {
+          "id": "koke",
+          "name": "Koke",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 82
+        },
+        {
+          "id": "de-paul",
+          "name": "Rodrigo De Paul",
+          "position": "MIDFIELDER",
+          "shirtNumber": 5,
+          "rating": 82
+        },
+        {
+          "id": "barrios",
+          "name": "Pablo Barrios",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "griezmann",
+          "name": "Antoine Griezmann",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 85
+        },
+        {
+          "id": "morata",
+          "name": "\u00c1lvaro Morata",
+          "position": "FORWARD",
+          "shirtNumber": 19,
+          "rating": 82
+        },
+        {
+          "id": "correa",
+          "name": "\u00c1ngel Correa",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 80
+        }
+      ]
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "shortName": "RSO",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/vptvpr1473502986.png",
+      "strength": {
+        "attack": 80,
+        "midfield": 80,
+        "defense": 78,
+        "goalkeeper": 80
+      },
+      "players": [
+        {
+          "id": "remiro",
+          "name": "\u00c1lex Remiro",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 82
+        },
+        {
+          "id": "le-normand",
+          "name": "Robin Le Normand",
+          "position": "DEFENDER",
+          "shirtNumber": 6,
+          "rating": 80
+        },
+        {
+          "id": "zubeldia",
+          "name": "Igor Zubeldia",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 78
+        },
+        {
+          "id": "munoz",
+          "name": "Jon Aramburu",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "rico",
+          "name": "Aihen Mu\u00f1oz",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 78
+        },
+        {
+          "id": "zubimendi",
+          "name": "Mart\u00edn Zubimendi",
+          "position": "MIDFIELDER",
+          "shirtNumber": 4,
+          "rating": 84
+        },
+        {
+          "id": "merino",
+          "name": "Mikel Merino",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 82
+        },
+        {
+          "id": "brais",
+          "name": "Brais M\u00e9ndez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 80
+        },
+        {
+          "id": "oyarzabal",
+          "name": "Mikel Oyarzabal",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 82
+        },
+        {
+          "id": "kubo",
+          "name": "Takefusa Kubo",
+          "position": "FORWARD",
+          "shirtNumber": 14,
+          "rating": 82
+        },
+        {
+          "id": "sorloth",
+          "name": "Alexander S\u00f8rloth",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "villarreal",
+      "name": "Villarreal CF",
+      "shortName": "VIL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/vrypqy1473503073.png",
+      "strength": {
+        "attack": 78,
+        "midfield": 78,
+        "defense": 76,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "rulli",
+          "name": "Ger\u00f3nimo Rulli",
+          "position": "GOALKEEPER",
+          "shirtNumber": 13,
+          "rating": 80
+        },
+        {
+          "id": "albiol",
+          "name": "Ra\u00fal Albiol",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 78
+        },
+        {
+          "id": "torres-p",
+          "name": "Pau Torres",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 82
+        },
+        {
+          "id": "foyth",
+          "name": "Juan Foyth",
+          "position": "DEFENDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "pedraza",
+          "name": "Alfonso Pedraza",
+          "position": "DEFENDER",
+          "shirtNumber": 24,
+          "rating": 78
+        },
+        {
+          "id": "parejo",
+          "name": "Dani Parejo",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 82
+        },
+        {
+          "id": "capoue",
+          "name": "\u00c9tienne Capoue",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 78
+        },
+        {
+          "id": "baena",
+          "name": "\u00c1lex Baena",
+          "position": "MIDFIELDER",
+          "shirtNumber": 16,
+          "rating": 80
+        },
+        {
+          "id": "jackson-v",
+          "name": "Nicolas Jackson",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "morales",
+          "name": "Jos\u00e9 Luis Morales",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "chukwueze",
+          "name": "Samuel Chukwueze",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "athletic-bilbao",
+      "name": "Athletic Club",
+      "shortName": "ATH",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
+      "strength": {
+        "attack": 78,
+        "midfield": 78,
+        "defense": 78,
+        "goalkeeper": 80
+      },
+      "players": [
+        {
+          "id": "simon",
+          "name": "Unai Sim\u00f3n",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 84
+        },
+        {
+          "id": "vivian",
+          "name": "Dani Vivian",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 78
+        },
+        {
+          "id": "yeray",
+          "name": "Yeray \u00c1lvarez",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 78
+        },
+        {
+          "id": "lekue",
+          "name": "\u00d3scar de Marcos",
+          "position": "DEFENDER",
+          "shirtNumber": 18,
+          "rating": 76
+        },
+        {
+          "id": "berchiche",
+          "name": "Yuri Berchiche",
+          "position": "DEFENDER",
+          "shirtNumber": 17,
+          "rating": 78
+        },
+        {
+          "id": "vesga",
+          "name": "Mikel Vesga",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "sancet",
+          "name": "Oihan Sancet",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 80
+        },
+        {
+          "id": "muniain",
+          "name": "Iker Muniain",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 80
+        },
+        {
+          "id": "williams-i",
+          "name": "I\u00f1aki Williams",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 82
+        },
+        {
+          "id": "williams-n",
+          "name": "Nico Williams",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 84
+        },
+        {
+          "id": "guruzeta",
+          "name": "Gorka Guruzeta",
+          "position": "FORWARD",
+          "shirtNumber": 19,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "shortName": "BET",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png",
+      "strength": {
+        "attack": 76,
+        "midfield": 78,
+        "defense": 76,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "bravo",
+          "name": "Claudio Bravo",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "pezzella",
+          "name": "Germ\u00e1n Pezzella",
+          "position": "DEFENDER",
+          "shirtNumber": 6,
+          "rating": 78
+        },
+        {
+          "id": "luiz-felipe",
+          "name": "Luiz Felipe",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "bellerin",
+          "name": "H\u00e9ctor Beller\u00edn",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "miranda",
+          "name": "Juan Miranda",
+          "position": "DEFENDER",
+          "shirtNumber": 22,
+          "rating": 78
+        },
+        {
+          "id": "guido",
+          "name": "Guido Rodr\u00edguez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 5,
+          "rating": 80
+        },
+        {
+          "id": "fekir",
+          "name": "Nabil Fekir",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 82
+        },
+        {
+          "id": "canales",
+          "name": "Sergio Canales",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 80
+        },
+        {
+          "id": "iglesias",
+          "name": "Borja Iglesias",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 80
+        },
+        {
+          "id": "juanmi",
+          "name": "Juanmi",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 78
+        },
+        {
+          "id": "ayoze",
+          "name": "Ayoze P\u00e9rez",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "sevilla",
+      "name": "Sevilla FC",
+      "shortName": "SEV",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/vpsqqx1473502977.png",
+      "strength": {
+        "attack": 76,
+        "midfield": 76,
+        "defense": 76,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "bono",
+          "name": "Yassine Bounou",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 82
+        },
+        {
+          "id": "bad\u00e9",
+          "name": "Lo\u00efc Bad\u00e9",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 78
+        },
+        {
+          "id": "nianzou",
+          "name": "Tanguy Nianzou",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "navas",
+          "name": "Jes\u00fas Navas",
+          "position": "DEFENDER",
+          "shirtNumber": 16,
+          "rating": 78
+        },
+        {
+          "id": "acuna",
+          "name": "Marcos Acu\u00f1a",
+          "position": "DEFENDER",
+          "shirtNumber": 19,
+          "rating": 78
+        },
+        {
+          "id": "jordan",
+          "name": "Joan Jord\u00e1n",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "rakitic",
+          "name": "Ivan Rakiti\u0107",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 80
+        },
+        {
+          "id": "suso",
+          "name": "Suso",
+          "position": "MIDFIELDER",
+          "shirtNumber": 11,
+          "rating": 78
+        },
+        {
+          "id": "en-nesyri",
+          "name": "Youssef En-Nesyri",
+          "position": "FORWARD",
+          "shirtNumber": 15,
+          "rating": 80
+        },
+        {
+          "id": "lamela",
+          "name": "Erik Lamela",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 78
+        },
+        {
+          "id": "ocampos",
+          "name": "Lucas Ocampos",
+          "position": "FORWARD",
+          "shirtNumber": 5,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "valencia",
+      "name": "Valencia CF",
+      "shortName": "VAL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
+      "strength": {
+        "attack": 74,
+        "midfield": 74,
+        "defense": 74,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "mamardashvili",
+          "name": "Giorgi Mamardashvili",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 82
+        },
+        {
+          "id": "diakhaby",
+          "name": "Mouctar Diakhaby",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "paulista",
+          "name": "Gabriel Paulista",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 78
+        },
+        {
+          "id": "correia",
+          "name": "Thierry Correia",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "gaya",
+          "name": "Jos\u00e9 Gay\u00e0",
+          "position": "DEFENDER",
+          "shirtNumber": 14,
+          "rating": 80
+        },
+        {
+          "id": "guillam\u00f3n",
+          "name": "Hugo Guillam\u00f3n",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 78
+        },
+        {
+          "id": "almeida",
+          "name": "Andr\u00e9 Almeida",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "pepelu",
+          "name": "Pepelu",
+          "position": "MIDFIELDER",
+          "shirtNumber": 18,
+          "rating": 76
+        },
+        {
+          "id": "duro",
+          "name": "Hugo Duro",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "mir",
+          "name": "Rafa Mir",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "diego-lopez",
+          "name": "Diego L\u00f3pez",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "getafe",
+      "name": "Getafe CF",
+      "shortName": "GET",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/eyh2891655594452.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 74,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "soria",
+          "name": "David Soria",
+          "position": "GOALKEEPER",
+          "shirtNumber": 13,
+          "rating": 78
+        },
+        {
+          "id": "djene",
+          "name": "Djen\u00e9 Dakonam",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 78
+        },
+        {
+          "id": "duarte",
+          "name": "\u00d3scar Duarte",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "iglesias-d",
+          "name": "Dami\u00e1n Su\u00e1rez",
+          "position": "DEFENDER",
+          "shirtNumber": 22,
+          "rating": 76
+        },
+        {
+          "id": "angileri",
+          "name": "Fabrizio Angileri",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "maksimovic",
+          "name": "Nemanja Maksimovi\u0107",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "arambarri",
+          "name": "Mauro Arambarri",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "ale\u00f1a",
+          "name": "Carles Ale\u00f1\u00e1",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "borja-mayoral",
+          "name": "Borja Mayoral",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "unal",
+          "name": "Enes \u00dcnal",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "greenwood",
+          "name": "Mason Greenwood",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "osasuna",
+      "name": "CA Osasuna",
+      "shortName": "OSA",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/rvspvt1473502960.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 74,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "sergio-herrera",
+          "name": "Sergio Herrera",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "david-garcia",
+          "name": "David Garc\u00eda",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 78
+        },
+        {
+          "id": "catena",
+          "name": "Unai Garc\u00eda",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "nacho-vidal",
+          "name": "Nacho Vidal",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "manu-sanchez",
+          "name": "Manu S\u00e1nchez",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "moncayola",
+          "name": "Jon Moncayola",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "torro",
+          "name": "Lucas Torr\u00f3",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "oroz",
+          "name": "Aimar Oroz",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 78
+        },
+        {
+          "id": "budimir",
+          "name": "Ante Budimir",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "ruben-garcia",
+          "name": "Rub\u00e9n Garc\u00eda",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "chimy-avila",
+          "name": "Chimy \u00c1vila",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "celta-vigo",
+      "name": "RC Celta de Vigo",
+      "shortName": "CEL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/xfjtku1690436219.png",
+      "strength": {
+        "attack": 74,
+        "midfield": 74,
+        "defense": 72,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "villar",
+          "name": "Iv\u00e1n Villar",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "aidoo",
+          "name": "Joseph Aidoo",
+          "position": "DEFENDER",
+          "shirtNumber": 15,
+          "rating": 76
+        },
+        {
+          "id": "starfelt",
+          "name": "Carl Starfelt",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "mallo",
+          "name": "Hugo Mallo",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "javi-galan",
+          "name": "Javi Gal\u00e1n",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 78
+        },
+        {
+          "id": "beltran",
+          "name": "Fran Beltr\u00e1n",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "tapia",
+          "name": "Renato Tapia",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "veiga",
+          "name": "\u00d3scar Rodr\u00edguez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "aspas",
+          "name": "Iago Aspas",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 82
+        },
+        {
+          "id": "mina",
+          "name": "Santi Mina",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "cervi",
+          "name": "Franco Cervi",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "mallorca",
+      "name": "RCD Mallorca",
+      "shortName": "MLL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/ssptsx1473503730.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 74,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "greif",
+          "name": "Dominik Greif",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "valjent",
+          "name": "Martin Valjent",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 78
+        },
+        {
+          "id": "raillo",
+          "name": "Antonio Ra\u00edllo",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "maffeo",
+          "name": "Pablo Maffeo",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "jaume-costa",
+          "name": "Jaume Costa",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "baba",
+          "name": "Iddrisu Baba",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "dani-rodriguez",
+          "name": "Dani Rodr\u00edguez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "kang-in-lee",
+          "name": "Kang-in Lee",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 80
+        },
+        {
+          "id": "muriqi",
+          "name": "Vedat Muriqi",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "angel",
+          "name": "\u00c1ngel Rodr\u00edguez",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "abd\u00f3n",
+          "name": "Abd\u00f3n Prats",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "rayo-vallecano",
+      "name": "Rayo Vallecano",
+      "shortName": "RAY",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/nzhu941655595465.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 72,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "dimitrievski",
+          "name": "Stole Dimitrievski",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "lejeune",
+          "name": "Florian Lejeune",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "catena-r",
+          "name": "Alejandro Catena",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "balliu",
+          "name": "Iv\u00e1n Balliu",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "fran-garcia",
+          "name": "Fran Garc\u00eda",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 78
+        },
+        {
+          "id": "comesana",
+          "name": "\u00d3scar Valent\u00edn",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "unai-lopez",
+          "name": "Unai L\u00f3pez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "isi",
+          "name": "Isi Palaz\u00f3n",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 78
+        },
+        {
+          "id": "de-tomas",
+          "name": "Ra\u00fal de Tom\u00e1s",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "alvaro-garcia",
+          "name": "\u00c1lvaro Garc\u00eda",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "camello",
+          "name": "Sergio Camello",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "las-palmas",
+      "name": "UD Las Palmas",
+      "shortName": "LPA",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/mmhyb11616443601.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 70,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "cillessen",
+          "name": "Jasper Cillessen",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "suarez-lp",
+          "name": "\u00c1lex Su\u00e1rez",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "coco",
+          "name": "Sergi Cardona",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "viti",
+          "name": "Viti",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "marmol",
+          "name": "Mika M\u00e1rmol",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "loiodice",
+          "name": "Enzo Loiodice",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "kirian",
+          "name": "Kirian Rodr\u00edguez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "moleiro",
+          "name": "Alberto Moleiro",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "sandro",
+          "name": "Sandro Ram\u00edrez",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "munir",
+          "name": "Munir El Haddadi",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "marc-cardona",
+          "name": "Marc Cardona",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "leganes",
+      "name": "CD Legan\u00e9s",
+      "shortName": "LEG",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/tm0adr1616443898.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 72,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "dmitrovic",
+          "name": "Marko Dmitrovi\u0107",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "sergio-gonzalez",
+          "name": "Sergio Gonz\u00e1lez",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "nastasic",
+          "name": "Matija Nastasi\u0107",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "javi-hernandez",
+          "name": "Javi Hern\u00e1ndez",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 72
+        },
+        {
+          "id": "franquesa",
+          "name": "Jorge S\u00e1enz",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 72
+        },
+        {
+          "id": "brasanac",
+          "name": "Darko Bra\u0161anac",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "tapia-l",
+          "name": "Renato Tapia",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "juan-cruz",
+          "name": "Juan Cruz",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 74
+        },
+        {
+          "id": "munir-l",
+          "name": "Munir El Haddadi",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "miguel-de-la-fuente",
+          "name": "Miguel de la Fuente",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 74
+        },
+        {
+          "id": "diego-garcia",
+          "name": "Diego Garc\u00eda",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "alaves",
+      "name": "Deportivo Alav\u00e9s",
+      "shortName": "ALA",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/mfn99h1734673842.png",
+      "strength": {
+        "attack": 68,
+        "midfield": 68,
+        "defense": 70,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "sivera",
+          "name": "Antonio Sivera",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "abqar",
+          "name": "Moussa Diarra",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "tenaglia",
+          "name": "Nahuel Tenaglia",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "gorosabel",
+          "name": "Andoni Gorosabel",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "javi-lopez",
+          "name": "Javi L\u00f3pez",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 72
+        },
+        {
+          "id": "blanco-leschuk",
+          "name": "Antonio Blanco",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "guevara",
+          "name": "Tom\u00e1s Pina",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "rioja",
+          "name": "Luis Rioja",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "guridi",
+          "name": "Jon Guridi",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 74
+        },
+        {
+          "id": "kike-garcia",
+          "name": "Kike Garc\u00eda",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "conechny",
+          "name": "Tom\u00e1s Conechny",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 72
+        }
+      ]
+    },
+    {
+      "id": "valladolid",
+      "name": "Real Valladolid",
+      "shortName": "VLL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/bnhu8b1719983736.png",
+      "strength": {
+        "attack": 68,
+        "midfield": 68,
+        "defense": 70,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "hein",
+          "name": "Karl Hein",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 74
+        },
+        {
+          "id": "javi-sanchez",
+          "name": "Javi S\u00e1nchez",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "david-torres",
+          "name": "David Torres",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 72
+        },
+        {
+          "id": "luis-perez",
+          "name": "Luis P\u00e9rez",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 72
+        },
+        {
+          "id": "lucas-rosa",
+          "name": "Lucas Rosa",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 72
+        },
+        {
+          "id": "kike-perez",
+          "name": "Kike P\u00e9rez",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "meseguer",
+          "name": "Mario Mart\u00edn",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "kenedy",
+          "name": "Kenedy",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 74
+        },
+        {
+          "id": "marcos-andre",
+          "name": "Marcos Andr\u00e9",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 74
+        },
+        {
+          "id": "sylla",
+          "name": "Mamadou Sylla",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 72
+        },
+        {
+          "id": "anuar",
+          "name": "Anuar",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 72
+        }
+      ]
+    },
+    {
+      "id": "espanyol",
+      "name": "RCD Espanyol",
+      "shortName": "ESP",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 70,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "joan-garcia",
+          "name": "Joan Garc\u00eda",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "cabrera",
+          "name": "Leandro Cabrera",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "calero",
+          "name": "Fernando Calero",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "omar-el-hilali",
+          "name": "Omar El Hilali",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 72
+        },
+        {
+          "id": "brian-olivan",
+          "name": "Brian Oliv\u00e1n",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "gragera",
+          "name": "Jos\u00e9 Gragera",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "edu-exposito",
+          "name": "Edu Exp\u00f3sito",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "jofre",
+          "name": "Jofre Carreras",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 74
+        },
+        {
+          "id": "puado",
+          "name": "Javi Puado",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "braithwaite",
+          "name": "Martin Braithwaite",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 74
+        },
+        {
+          "id": "cardona",
+          "name": "Pere Milla",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "girona",
+      "name": "Girona FC",
+      "shortName": "GIR",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/kfu7zu1659897499.png",
+      "strength": {
+        "attack": 80,
+        "midfield": 78,
+        "defense": 76,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "gazzaniga",
+          "name": "Paulo Gazzaniga",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "blind",
+          "name": "Daley Blind",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 78
+        },
+        {
+          "id": "david-lopez",
+          "name": "David L\u00f3pez",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "miguel-gutierrez",
+          "name": "Miguel Guti\u00e9rrez",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 78
+        },
+        {
+          "id": "arnau-martinez",
+          "name": "Arnau Mart\u00ednez",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "herrera-y",
+          "name": "Yangel Herrera",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "romeu",
+          "name": "Oriol Romeu",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "tsygankov",
+          "name": "Viktor Tsygankov",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 80
+        },
+        {
+          "id": "dovbyk",
+          "name": "Artem Dovbyk",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 82
+        },
+        {
+          "id": "bryan-gil",
+          "name": "Bryan Gil",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "portu",
+          "name": "Portu",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    }
+  ]
+}

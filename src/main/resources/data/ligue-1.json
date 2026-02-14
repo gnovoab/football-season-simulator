@@ -1,0 +1,1646 @@
+{
+  "id": "ligue-1",
+  "name": "Ligue 1",
+  "country": "France",
+  "logoUrl": "https://r2.thesportsdb.com/images/media/league/badge/8f5jmf1516458074.png",
+  "teams": [
+    {
+      "id": "psg",
+      "name": "Paris Saint-Germain",
+      "shortName": "PSG",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/vvj6uh1560677525.png",
+      "strength": {
+        "attack": 90,
+        "midfield": 88,
+        "defense": 86,
+        "goalkeeper": 88
+      },
+      "players": [
+        {
+          "id": "donnarumma",
+          "name": "Gianluigi Donnarumma",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 88
+        },
+        {
+          "id": "marquinhos",
+          "name": "Marquinhos",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 86
+        },
+        {
+          "id": "skriniar",
+          "name": "Milan \u0160kriniar",
+          "position": "DEFENDER",
+          "shirtNumber": 37,
+          "rating": 84
+        },
+        {
+          "id": "hakimi",
+          "name": "Achraf Hakimi",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 86
+        },
+        {
+          "id": "mendes",
+          "name": "Nuno Mendes",
+          "position": "DEFENDER",
+          "shirtNumber": 25,
+          "rating": 84
+        },
+        {
+          "id": "vitinha",
+          "name": "Vitinha",
+          "position": "MIDFIELDER",
+          "shirtNumber": 17,
+          "rating": 84
+        },
+        {
+          "id": "ugarte",
+          "name": "Manuel Ugarte",
+          "position": "MIDFIELDER",
+          "shirtNumber": 4,
+          "rating": 82
+        },
+        {
+          "id": "za\u00efre-emery",
+          "name": "Warren Za\u00efre-Emery",
+          "position": "MIDFIELDER",
+          "shirtNumber": 33,
+          "rating": 80
+        },
+        {
+          "id": "dembele",
+          "name": "Ousmane Demb\u00e9l\u00e9",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 86
+        },
+        {
+          "id": "mbappe",
+          "name": "Kylian Mbapp\u00e9",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 92
+        },
+        {
+          "id": "ramos-g",
+          "name": "Gon\u00e7alo Ramos",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 82
+        }
+      ]
+    },
+    {
+      "id": "monaco",
+      "name": "AS Monaco",
+      "shortName": "ASM",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
+      "strength": {
+        "attack": 82,
+        "midfield": 80,
+        "defense": 78,
+        "goalkeeper": 80
+      },
+      "players": [
+        {
+          "id": "kohn",
+          "name": "Philipp K\u00f6hn",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "badiashile",
+          "name": "Beno\u00eet Badiashile",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 80
+        },
+        {
+          "id": "sarr",
+          "name": "Malick Thiaw",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 78
+        },
+        {
+          "id": "vanderson",
+          "name": "Vanderson",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 80
+        },
+        {
+          "id": "henrique",
+          "name": "Caio Henrique",
+          "position": "DEFENDER",
+          "shirtNumber": 12,
+          "rating": 80
+        },
+        {
+          "id": "camara",
+          "name": "Mohamed Camara",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 80
+        },
+        {
+          "id": "fofana-y",
+          "name": "Youssouf Fofana",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 82
+        },
+        {
+          "id": "golovin",
+          "name": "Aleksandr Golovin",
+          "position": "MIDFIELDER",
+          "shirtNumber": 17,
+          "rating": 80
+        },
+        {
+          "id": "minamino",
+          "name": "Takumi Minamino",
+          "position": "FORWARD",
+          "shirtNumber": 18,
+          "rating": 78
+        },
+        {
+          "id": "ben-yedder",
+          "name": "Wissam Ben Yedder",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 82
+        },
+        {
+          "id": "embolo",
+          "name": "Breel Embolo",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "marseille",
+      "name": "Olympique de Marseille",
+      "shortName": "OM",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/uutsyt1473504764.png",
+      "strength": {
+        "attack": 80,
+        "midfield": 78,
+        "defense": 76,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "lopez-p",
+          "name": "Pau L\u00f3pez",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 80
+        },
+        {
+          "id": "balerdi",
+          "name": "Leonardo Balerdi",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 78
+        },
+        {
+          "id": "mbemba",
+          "name": "Chancel Mbemba",
+          "position": "DEFENDER",
+          "shirtNumber": 99,
+          "rating": 78
+        },
+        {
+          "id": "clauss",
+          "name": "Jonathan Clauss",
+          "position": "DEFENDER",
+          "shirtNumber": 7,
+          "rating": 80
+        },
+        {
+          "id": "murillo",
+          "name": "Quentin Merlin",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "rongier",
+          "name": "Valentin Rongier",
+          "position": "MIDFIELDER",
+          "shirtNumber": 21,
+          "rating": 78
+        },
+        {
+          "id": "veretout",
+          "name": "Jordan Veretout",
+          "position": "MIDFIELDER",
+          "shirtNumber": 27,
+          "rating": 78
+        },
+        {
+          "id": "harit",
+          "name": "Amine Harit",
+          "position": "MIDFIELDER",
+          "shirtNumber": 11,
+          "rating": 78
+        },
+        {
+          "id": "aubameyang",
+          "name": "Pierre-Emerick Aubameyang",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 82
+        },
+        {
+          "id": "sanchez-a",
+          "name": "Alexis S\u00e1nchez",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 80
+        },
+        {
+          "id": "under",
+          "name": "Cengiz \u00dcnder",
+          "position": "FORWARD",
+          "shirtNumber": 17,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "lille",
+      "name": "LOSC Lille",
+      "shortName": "LOSC",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/2giize1534005340.png",
+      "strength": {
+        "attack": 78,
+        "midfield": 78,
+        "defense": 78,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "chevalier",
+          "name": "Lucas Chevalier",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "diakite",
+          "name": "Bafod\u00e9 Diakit\u00e9",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 78
+        },
+        {
+          "id": "fonte",
+          "name": "Jos\u00e9 Fonte",
+          "position": "DEFENDER",
+          "shirtNumber": 6,
+          "rating": 78
+        },
+        {
+          "id": "celik",
+          "name": "Tiago Santos",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "gudmundsson",
+          "name": "Gabriel Gudmundsson",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "andre",
+          "name": "Benjamin Andr\u00e9",
+          "position": "MIDFIELDER",
+          "shirtNumber": 21,
+          "rating": 78
+        },
+        {
+          "id": "gomes",
+          "name": "Angel Gomes",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "cabella",
+          "name": "R\u00e9my Cabella",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "david",
+          "name": "Jonathan David",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 84
+        },
+        {
+          "id": "zhegrova",
+          "name": "Edon Zhegrova",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 78
+        },
+        {
+          "id": "bamba",
+          "name": "Mohamed Bayo",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "lyon",
+      "name": "Olympique Lyonnais",
+      "shortName": "OL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/blk9771656932845.png",
+      "strength": {
+        "attack": 78,
+        "midfield": 76,
+        "defense": 74,
+        "goalkeeper": 78
+      },
+      "players": [
+        {
+          "id": "lopes",
+          "name": "Anthony Lopes",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 80
+        },
+        {
+          "id": "lukeba",
+          "name": "Castello Lukeba",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 78
+        },
+        {
+          "id": "tagliafico",
+          "name": "Nicol\u00e1s Tagliafico",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 80
+        },
+        {
+          "id": "gusto",
+          "name": "Sa\u00ebl Kumbedi",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "diomande",
+          "name": "Sinaly Diomand\u00e9",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "caqueret",
+          "name": "Maxence Caqueret",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "tolisso",
+          "name": "Corentin Tolisso",
+          "position": "MIDFIELDER",
+          "shirtNumber": 88,
+          "rating": 78
+        },
+        {
+          "id": "cherki",
+          "name": "Rayan Cherki",
+          "position": "MIDFIELDER",
+          "shirtNumber": 18,
+          "rating": 78
+        },
+        {
+          "id": "lacazette",
+          "name": "Alexandre Lacazette",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 82
+        },
+        {
+          "id": "mikautadze",
+          "name": "Georges Mikautadze",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "fofana-m",
+          "name": "Malick Fofana",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "lens",
+      "name": "RC Lens",
+      "shortName": "RCL",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/3pxoum1598797195.png",
+      "strength": {
+        "attack": 76,
+        "midfield": 78,
+        "defense": 78,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "samba",
+          "name": "Brice Samba",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 80
+        },
+        {
+          "id": "danso",
+          "name": "Kevin Danso",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 80
+        },
+        {
+          "id": "medina",
+          "name": "Facundo Medina",
+          "position": "DEFENDER",
+          "shirtNumber": 25,
+          "rating": 78
+        },
+        {
+          "id": "frankowski",
+          "name": "Przemys\u0142aw Frankowski",
+          "position": "DEFENDER",
+          "shirtNumber": 7,
+          "rating": 78
+        },
+        {
+          "id": "machado",
+          "name": "Deiver Machado",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "fofana-s",
+          "name": "Salis Abdul Samed",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 78
+        },
+        {
+          "id": "gradit",
+          "name": "Jonathan Gradit",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "thomasson",
+          "name": "Adrien Thomasson",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "sotoca",
+          "name": "Florian Sotoca",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "openda-l",
+          "name": "Elye Wahi",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 78
+        },
+        {
+          "id": "said",
+          "name": "Wesley Said",
+          "position": "FORWARD",
+          "shirtNumber": 18,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "rennes",
+      "name": "Stade Rennais",
+      "shortName": "SRFC",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/ypturx1473504818.png",
+      "strength": {
+        "attack": 76,
+        "midfield": 76,
+        "defense": 76,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "mandanda",
+          "name": "Steve Mandanda",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "wooh",
+          "name": "Christopher Wooh",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "theate",
+          "name": "Arthur Theate",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 78
+        },
+        {
+          "id": "assignon",
+          "name": "Lorenz Assignon",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 76
+        },
+        {
+          "id": "truffert",
+          "name": "Adrien Truffert",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "bourigeaud",
+          "name": "Benjamin Bourigeaud",
+          "position": "MIDFIELDER",
+          "shirtNumber": 14,
+          "rating": 80
+        },
+        {
+          "id": "majer",
+          "name": "Lovro Majer",
+          "position": "MIDFIELDER",
+          "shirtNumber": 21,
+          "rating": 80
+        },
+        {
+          "id": "santamaria",
+          "name": "Baptiste Santamaria",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "terrier",
+          "name": "Martin Terrier",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 80
+        },
+        {
+          "id": "kalimuendo",
+          "name": "Arnaud Kalimuendo",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "gouiri",
+          "name": "Amine Gouiri",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 78
+        }
+      ]
+    },
+    {
+      "id": "nice",
+      "name": "OGC Nice",
+      "shortName": "OGCN",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/msy7ly1621593859.png",
+      "strength": {
+        "attack": 74,
+        "midfield": 76,
+        "defense": 76,
+        "goalkeeper": 76
+      },
+      "players": [
+        {
+          "id": "bulka",
+          "name": "Marcin Bu\u0142ka",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "todibo",
+          "name": "Jean-Clair Todibo",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 80
+        },
+        {
+          "id": "dante",
+          "name": "Dante",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 78
+        },
+        {
+          "id": "atal",
+          "name": "Youcef Atal",
+          "position": "DEFENDER",
+          "shirtNumber": 21,
+          "rating": 78
+        },
+        {
+          "id": "bard",
+          "name": "Melvin Bard",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 76
+        },
+        {
+          "id": "rosario",
+          "name": "Pablo Rosario",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "boudaoui",
+          "name": "Hicham Boudaoui",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "thuram-k",
+          "name": "Kh\u00e9phren Thuram",
+          "position": "MIDFIELDER",
+          "shirtNumber": 19,
+          "rating": 78
+        },
+        {
+          "id": "laborde",
+          "name": "Ga\u00ebtan Laborde",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 78
+        },
+        {
+          "id": "guessand",
+          "name": "Evann Guessand",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "boga",
+          "name": "J\u00e9r\u00e9mie Boga",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "reims",
+      "name": "Stade de Reims",
+      "shortName": "SDR",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/l5rr1n1637315636.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 74,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "diouf",
+          "name": "Yehvann Diouf",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "abdelhamid",
+          "name": "Yunis Abdelhamid",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "gravillon",
+          "name": "Emmanuel Agbadou",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "locko",
+          "name": "Bradley Locko",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "buta",
+          "name": "Aur\u00e9lio Buta",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "munetsi",
+          "name": "Marshall Munetsi",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "matusiwa",
+          "name": "Azor Matusiwa",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "ito-j",
+          "name": "Junya Ito",
+          "position": "MIDFIELDER",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "balogun",
+          "name": "Folarin Balogun",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "nakamura",
+          "name": "Keito Nakamura",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        },
+        {
+          "id": "zeneli",
+          "name": "Arb\u00ebr Zeneli",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier HSC",
+      "shortName": "MHSC",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/8wn9x31750879448.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 72,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "lecomte",
+          "name": "Benjamin Lecomte",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "tchato",
+          "name": "Christopher Jullien",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "sakho",
+          "name": "Mamadou Sakho",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "souquet",
+          "name": "Arnaud Souquet",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "ristic",
+          "name": "Mihailo Risti\u0107",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "chotard",
+          "name": "Joris Chotard",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "savanier",
+          "name": "T\u00e9ji Savanier",
+          "position": "MIDFIELDER",
+          "shirtNumber": 11,
+          "rating": 80
+        },
+        {
+          "id": "ferri",
+          "name": "Jordan Ferri",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "wahi",
+          "name": "Elye Wahi",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 78
+        },
+        {
+          "id": "khazri",
+          "name": "Wahbi Khazri",
+          "position": "FORWARD",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "nordin",
+          "name": "Arnaud Nordin",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "strasbourg",
+      "name": "RC Strasbourg",
+      "shortName": "RCSA",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/b8k77w1766625501.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 72,
+        "defense": 72,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "sels",
+          "name": "Matz Sels",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "perrin",
+          "name": "Gerzino Nyamsi",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "djiku",
+          "name": "Alexander Djiku",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "delaine",
+          "name": "Thomas Delaine",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "guilbert",
+          "name": "Fr\u00e9d\u00e9ric Guilbert",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "prcic",
+          "name": "Sanjin Prci\u0107",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "aholou",
+          "name": "Jean-Eudes Aholou",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "thomasson-s",
+          "name": "Adrien Thomasson",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "gameiro",
+          "name": "K\u00e9vin Gameiro",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "diallo-h",
+          "name": "Habib Diallo",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 76
+        },
+        {
+          "id": "ajorque",
+          "name": "Ludovic Ajorque",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        }
+      ]
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse FC",
+      "shortName": "TFC",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/17eqox1688449282.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 70,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "dup\u00e9",
+          "name": "Guillaume Restes",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "nicolaisen",
+          "name": "Rasmus Nicolaisen",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "keben",
+          "name": "Logan Costa",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "desler",
+          "name": "Mikkel Desler",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "suazo",
+          "name": "Gabriel Suazo",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "spierings",
+          "name": "Stijn Spierings",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "van-den-boomen",
+          "name": "Branco van den Boomen",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "aboukhlal",
+          "name": "Zakaria Aboukhlal",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 74
+        },
+        {
+          "id": "dallinga",
+          "name": "Thijs Dallinga",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "ratao",
+          "name": "Rafael Rat\u00e3o",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        },
+        {
+          "id": "onaiwu",
+          "name": "Ado Onaiwu",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "nantes",
+      "name": "FC Nantes",
+      "shortName": "FCN",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/mla9x61678808018.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 72,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "lafont",
+          "name": "Alban Lafont",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 78
+        },
+        {
+          "id": "pallois",
+          "name": "Nicolas Pallois",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 76
+        },
+        {
+          "id": "girotto",
+          "name": "Andrei Girotto",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "appiah",
+          "name": "Dennis Appiah",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "merlin",
+          "name": "Quentin Merlin",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "moutoussamy",
+          "name": "Samuel Moutoussamy",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "chirivella",
+          "name": "Pedro Chirivella",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "blas",
+          "name": "Ludovic Blas",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 78
+        },
+        {
+          "id": "simon",
+          "name": "Moses Simon",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 78
+        },
+        {
+          "id": "mostafa",
+          "name": "Mostafa Mohamed",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "guessand-n",
+          "name": "Ignatius Ganago",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "brest",
+      "name": "Stade Brestois 29",
+      "shortName": "SB29",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/z69be41598797026.png",
+      "strength": {
+        "attack": 72,
+        "midfield": 72,
+        "defense": 74,
+        "goalkeeper": 74
+      },
+      "players": [
+        {
+          "id": "bizot",
+          "name": "Marco Bizot",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 76
+        },
+        {
+          "id": "chardonnet",
+          "name": "Brendan Chardonnet",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "brassier",
+          "name": "Lilian Brassier",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 76
+        },
+        {
+          "id": "lala",
+          "name": "Kenny Lala",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "pereira-lage",
+          "name": "Romain Perraud",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 74
+        },
+        {
+          "id": "magnetti",
+          "name": "Pierre Lees-Melou",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 76
+        },
+        {
+          "id": "camara-m",
+          "name": "Mahdi Camara",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 76
+        },
+        {
+          "id": "del-castillo",
+          "name": "J\u00e9r\u00e9my Le Douaron",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "honorat",
+          "name": "Franck Honorat",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 78
+        },
+        {
+          "id": "mouni\u00e9",
+          "name": "Steve Mouni\u00e9",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "slimani",
+          "name": "Islam Slimani",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "auxerre",
+      "name": "AJ Auxerre",
+      "shortName": "AJA",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 70,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "leon",
+          "name": "Donovan L\u00e9on",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 74
+        },
+        {
+          "id": "jubal",
+          "name": "Jubal",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "osho",
+          "name": "Gabriel Osho",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 74
+        },
+        {
+          "id": "akpa",
+          "name": "Th\u00e9o Pellenard",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 72
+        },
+        {
+          "id": "mensah-a",
+          "name": "Gideon Mensah",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 72
+        },
+        {
+          "id": "raveloson",
+          "name": "Rayan Raveloson",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "perrin",
+          "name": "Lassine Sinayoko",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 74
+        },
+        {
+          "id": "autret",
+          "name": "Mathias Autret",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 74
+        },
+        {
+          "id": "sinayoko",
+          "name": "Hamed Traor\u00e9",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 76
+        },
+        {
+          "id": "perrot",
+          "name": "Ga\u00ebtan Perrin",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 72
+        },
+        {
+          "id": "charbonnier",
+          "name": "Ga\u00ebtan Charbonnier",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "angers",
+      "name": "Angers SCO",
+      "shortName": "SCO",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/ix6q4w1678808069.png",
+      "strength": {
+        "attack": 68,
+        "midfield": 68,
+        "defense": 68,
+        "goalkeeper": 70
+      },
+      "players": [
+        {
+          "id": "fofana-y",
+          "name": "Yahia Fofana",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 74
+        },
+        {
+          "id": "bamba-s",
+          "name": "Souleyman Bamba",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 72
+        },
+        {
+          "id": "lefort",
+          "name": "C\u00e9dric Hountondji",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 72
+        },
+        {
+          "id": "arcus",
+          "name": "Yan Valery",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 72
+        },
+        {
+          "id": "hanin",
+          "name": "Halid \u0160abanovi\u0107",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 72
+        },
+        {
+          "id": "belkebla",
+          "name": "Haris Belkebla",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "taibi",
+          "name": "Himad Abdelli",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 72
+        },
+        {
+          "id": "ounahi",
+          "name": "Azzedine Ounahi",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 76
+        },
+        {
+          "id": "diony",
+          "name": "Lois Diony",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 74
+        },
+        {
+          "id": "el-melali",
+          "name": "Farid El Melali",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 74
+        },
+        {
+          "id": "pereira-lage",
+          "name": "Esteban Lepaul",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 72
+        }
+      ]
+    },
+    {
+      "id": "saint-etienne",
+      "name": "AS Saint-\u00c9tienne",
+      "shortName": "ASSE",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/m4ej831656423694.png",
+      "strength": {
+        "attack": 70,
+        "midfield": 70,
+        "defense": 70,
+        "goalkeeper": 72
+      },
+      "players": [
+        {
+          "id": "larsonneur",
+          "name": "Gautier Larsonneur",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 74
+        },
+        {
+          "id": "nad\u00e9",
+          "name": "Dylan Batubinsika",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 74
+        },
+        {
+          "id": "petrot",
+          "name": "Dennis Appiah",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 72
+        },
+        {
+          "id": "ma\u00e7on",
+          "name": "Yvann Ma\u00e7on",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 74
+        },
+        {
+          "id": "p\u00e9trot",
+          "name": "L\u00e9o P\u00e9trot",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 72
+        },
+        {
+          "id": "moueffek",
+          "name": "A\u00efmen Moueffek",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "bouchouari",
+          "name": "Benjamin Bouchouari",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 72
+        },
+        {
+          "id": "cafaro",
+          "name": "Mathieu Cafaro",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 74
+        },
+        {
+          "id": "stassin",
+          "name": "Lucas Stassin",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 74
+        },
+        {
+          "id": "davitashvili",
+          "name": "Zuriko Davitashvili",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 76
+        },
+        {
+          "id": "wadji",
+          "name": "Ibrahim Sissoko",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 74
+        }
+      ]
+    },
+    {
+      "id": "le-havre",
+      "name": "Le Havre AC",
+      "shortName": "HAC",
+      "badgeUrl": "https://r2.thesportsdb.com/images/media/team/badge/aikowk1546475003.png",
+      "strength": {
+        "attack": 66,
+        "midfield": 66,
+        "defense": 68,
+        "goalkeeper": 70
+      },
+      "players": [
+        {
+          "id": "gorgelin",
+          "name": "Arthur Desmas",
+          "position": "GOALKEEPER",
+          "shirtNumber": 1,
+          "rating": 72
+        },
+        {
+          "id": "sangante",
+          "name": "Arouna Sangante",
+          "position": "DEFENDER",
+          "shirtNumber": 4,
+          "rating": 72
+        },
+        {
+          "id": "operi",
+          "name": "Etienne Yout\u00e9 Kinkou\u00e9",
+          "position": "DEFENDER",
+          "shirtNumber": 5,
+          "rating": 72
+        },
+        {
+          "id": "lloris",
+          "name": "Gautier Lloris",
+          "position": "DEFENDER",
+          "shirtNumber": 3,
+          "rating": 72
+        },
+        {
+          "id": "loric",
+          "name": "Christopher Operi",
+          "position": "DEFENDER",
+          "shirtNumber": 2,
+          "rating": 70
+        },
+        {
+          "id": "tour\u00e9",
+          "name": "Abdoulaye Tour\u00e9",
+          "position": "MIDFIELDER",
+          "shirtNumber": 8,
+          "rating": 74
+        },
+        {
+          "id": "kechta",
+          "name": "Oussama Targhalline",
+          "position": "MIDFIELDER",
+          "shirtNumber": 6,
+          "rating": 70
+        },
+        {
+          "id": "diouf-h",
+          "name": "Nabil Alioui",
+          "position": "MIDFIELDER",
+          "shirtNumber": 10,
+          "rating": 70
+        },
+        {
+          "id": "casimir",
+          "name": "Josu\u00e9 Casimir",
+          "position": "FORWARD",
+          "shirtNumber": 9,
+          "rating": 72
+        },
+        {
+          "id": "sangui",
+          "name": "Yassine Kechta",
+          "position": "FORWARD",
+          "shirtNumber": 7,
+          "rating": 70
+        },
+        {
+          "id": "joujou",
+          "name": "Lo\u00efc Nego",
+          "position": "FORWARD",
+          "shirtNumber": 11,
+          "rating": 70
+        }
+      ]
+    }
+  ]
+}

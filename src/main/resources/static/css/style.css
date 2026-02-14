@@ -1,0 +1,1139 @@
+/* ========================================
+   Football Season Simulator - Modern UI
+   Inspired by football-128.webflow.io
+   ======================================== */
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-card: #141414;
+    --bg-card-hover: #1a1a1a;
+    --accent-red: #e63946;
+    --accent-green: #2ecc71;
+    --accent-yellow: #f1c40f;
+    --accent-blue: #3498db;
+    --text-primary: #ffffff;
+    --text-secondary: #888888;
+    --text-muted: #888888;
+    --border-color: #2a2a2a;
+    --font-main: 'Red Hat Display', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.brand i {
+    color: var(--accent-yellow);
+    font-size: 1.5rem;
+}
+
+.status-badge {
+    background: var(--accent-green);
+    color: #000;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.disconnected {
+    background: var(--accent-red);
+    color: #fff;
+}
+
+.status-badge.polling {
+    background: var(--accent-yellow);
+    color: #000;
+}
+
+/* League Navigation */
+.league-nav {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+}
+
+.league-tabs {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.25rem 0;
+}
+
+.league-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    font-family: var(--font-main);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.league-tab img {
+    height: 20px;
+    width: auto;
+}
+
+.league-tab:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+}
+
+.league-tab.active {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    padding: 1rem 0;
+    padding-bottom: 80px; /* Space for ticker footer */
+}
+
+/* Matchweek Section */
+.matchweek-section {
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.matchweek-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.matchweek-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.matchweek-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.matchweek-number {
+    color: var(--accent-blue);
+}
+
+.season-badge {
+    background: var(--accent-green);
+    color: #000;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.upcoming-badge {
+    background: var(--text-muted);
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.match-time-display {
+    text-align: right;
+}
+
+.time-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.time-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent-blue);
+    line-height: 1;
+}
+
+/* Matches List */
+.matches-grid {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 280px);
+    overflow-y: auto;
+}
+
+.match-row {
+    display: flex;
+    align-items: stretch;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background 0.2s;
+    min-height: 60px;
+}
+
+.match-row:hover {
+    background: var(--bg-card-hover);
+}
+
+.match-row.live {
+    background: rgba(46, 204, 113, 0.08);
+    border-left: 3px solid var(--accent-green);
+}
+
+.match-row.finished {
+    opacity: 0.7;
+}
+
+/* Match status column on the left */
+.match-status-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    padding: 0.5rem;
+    background: var(--bg-dark);
+    border-right: 1px solid var(--border-color);
+}
+
+.match-minute {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.match-minute.live {
+    color: var(--accent-green);
+}
+
+.match-phase {
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Match content - FotMob style single row */
+.match-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    gap: 0.75rem;
+}
+
+.team-home, .team-away {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.team-home {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.team-away {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.team-home.winner .team-name,
+.team-away.winner .team-name {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.team-badge {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.team-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team-name.winner {
+    font-weight: 700;
+}
+
+/* Score display - FotMob style inline */
+.match-score-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-dark);
+    border-radius: 4px;
+    min-width: 60px;
+    justify-content: center;
+}
+
+.match-score-inline.live {
+    background: var(--accent-green);
+}
+
+.score-home, .score-away {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.score-home.winner, .score-away.winner {
+    color: var(--accent-green);
+}
+
+.match-score-inline.live .score-home,
+.match-score-inline.live .score-away,
+.match-score-inline.live .score-separator {
+    color: #fff;
+}
+
+.score-separator {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.match-status {
+    display: none;
+}
+
+.team-info {
+    display: none;
+}
+
+/* Next Matchweek */
+.next-matchweek {
+    opacity: 0.6;
+}
+
+.next-matchweek .match-score {
+    color: var(--text-muted);
+}
+
+/* Standings Section */
+.standings-section {
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.standings-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.standings-header h3 {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.standings-header i {
+    color: var(--accent-yellow);
+}
+
+.standings-table-wrapper {
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+}
+
+.standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+.standings-table th {
+    background: var(--bg-dark);
+    padding: 0.625rem 0.5rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+}
+
+.standings-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.standings-table tr:hover {
+    background: var(--bg-card-hover);
+}
+
+.standings-table .pos {
+    font-weight: 700;
+    width: 30px;
+}
+
+.standings-table .team-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.standings-table .team-cell img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.standings-table .pts {
+    font-weight: 700;
+    color: var(--accent-green);
+}
+
+.standings-table .ucl {
+    border-left: 3px solid var(--accent-green);
+}
+
+.standings-table .uel {
+    border-left: 3px solid #f39c12;
+}
+
+.standings-table .relegation {
+    border-left: 3px solid var(--accent-red);
+}
+
+/* Loading State */
+.loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: var(--text-muted);
+}
+
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--border-color);
+    border-top-color: var(--accent-red);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Modal */
+.dark-modal {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.dark-modal .modal-header {
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dark-modal .modal-body {
+    padding: 1.5rem;
+}
+
+.dark-modal .text-muted {
+    color: #aaaaaa !important;
+}
+
+.dark-modal .score-display {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.dark-modal h5 {
+    color: var(--text-primary);
+}
+
+/* Event Timeline */
+.event-timeline {
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--border-color);
+}
+
+.event-item {
+    position: relative;
+    padding: 0.75rem 0;
+    padding-left: 1rem;
+    color: var(--text-primary);
+}
+
+.event-item::before {
+    content: '';
+    position: absolute;
+    left: -1.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-muted);
+}
+
+.event-item.goal::before { background: var(--accent-green); }
+.event-item.yellow-card::before { background: var(--accent-yellow); }
+.event-item.red-card::before { background: var(--accent-red); }
+
+/* Event type labels */
+.event-type-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.event-type-label.event-goal {
+    color: var(--accent-green);
+}
+
+.event-type-label.event-own-goal {
+    color: var(--accent-red);
+}
+
+.event-type-label.event-yellow {
+    color: var(--accent-yellow);
+}
+
+.event-type-label.event-red {
+    color: var(--accent-red);
+}
+
+.event-type-label.event-var {
+    color: var(--accent-blue);
+}
+
+.event-type-label.event-penalty-missed {
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .team-name {
+        font-size: 0.8rem;
+    }
+
+    .team-badge {
+        width: 20px;
+        height: 20px;
+    }
+
+    .match-status-col {
+        min-width: 45px;
+    }
+
+    .match-teams {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .matchweek-header {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+
+    .match-time-display {
+        text-align: center;
+    }
+
+    .team-name {
+        font-size: 0.75rem;
+    }
+
+    .team-badge {
+        width: 18px;
+        height: 18px;
+    }
+
+    .match-status-col {
+        min-width: 40px;
+        padding: 0.25rem;
+    }
+
+    .match-minute {
+        font-size: 0.75rem;
+    }
+
+    .match-scores {
+        padding: 0.5rem;
+    }
+
+    .team-score {
+        font-size: 0.9rem;
+    }
+}
+
+/* Goal scored animation */
+@keyframes goalFlash {
+    0% { background-color: var(--bg-card); }
+    25% { background-color: rgba(46, 204, 113, 0.3); }
+    50% { background-color: var(--bg-card); }
+    75% { background-color: rgba(46, 204, 113, 0.2); }
+    100% { background-color: var(--bg-card); }
+}
+
+.match-row.goal-scored {
+    animation: goalFlash 1s ease-in-out;
+}
+
+.match-row.goal-scored .score {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* Ticker Footer - Next Matchweek */
+.ticker-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    z-index: 1000;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.ticker-header {
+    background: var(--accent-blue);
+    padding: 0 1.25rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.ticker-label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ticker-label i {
+    font-size: 1rem;
+}
+
+.next-matchweek-number {
+    color: #fff;
+}
+
+.ticker-wrapper {
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ticker-wrapper::before,
+.ticker-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.ticker-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-card), transparent);
+}
+
+.ticker-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-card), transparent);
+}
+
+.ticker-content {
+    display: flex;
+    gap: 2rem;
+    animation: ticker-scroll 30s linear infinite;
+    padding: 0 2rem;
+}
+
+.ticker-content:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ticker-match {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--bg-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.ticker-team {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.ticker-team img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.ticker-vs {
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.ticker-loading {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    padding: 0 2rem;
+}
+
+/* Hide ticker when no next matchweek */
+.ticker-footer.hidden {
+    display: none;
+}
+
+/* Modal Tabs */
+.modal-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-tabs .nav-link {
+    color: var(--text-muted);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: transparent;
+}
+
+.modal-tabs .nav-link:hover {
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--text-muted);
+}
+
+.modal-tabs .nav-link.active {
+    color: var(--accent-green);
+    background: transparent;
+    border-bottom: 2px solid var(--accent-green);
+}
+
+/* Statistics Tab - ESPN Style */
+.stats-container {
+    padding: 0.5rem 0;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+}
+
+.stat-value {
+    width: 50px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.stat-value.winner {
+    color: var(--accent-green);
+}
+
+.stat-bar-container {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.stat-label {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.stat-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--bg-dark);
+}
+
+.stat-bar-home {
+    background: var(--accent-blue);
+    transition: width 0.3s ease;
+}
+
+.stat-bar-home.winner {
+    background: var(--accent-green);
+}
+
+.stat-bar-away {
+    background: var(--accent-red);
+    transition: width 0.3s ease;
+}
+
+.stat-bar-away.winner {
+    background: var(--accent-green);
+}
+
+/* Predictions Tab */
+.predictions-container {
+    padding: 0.5rem 0;
+}
+
+.prediction-section {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.prediction-section:last-child {
+    border-bottom: none;
+}
+
+.prediction-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+/* Win Probability */
+.win-probability {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.prob-team {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.prob-label {
+    width: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.prob-bar-container {
+    flex: 1;
+    height: 24px;
+    background: var(--bg-dark);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.prob-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    transition: width 0.3s ease;
+}
+
+.prob-bar.home {
+    background: linear-gradient(90deg, var(--accent-blue), #4a90d9);
+}
+
+.prob-bar.draw {
+    background: linear-gradient(90deg, #666, #888);
+}
+
+.prob-bar.away {
+    background: linear-gradient(90deg, var(--accent-red), #e05555);
+}
+
+.prob-value {
+    width: 50px;
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Predicted Score */
+.predicted-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-dark);
+    border-radius: 8px;
+}
+
+.predicted-score .team-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.predicted-score .score {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.predicted-score .separator {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+}
+
+.confidence {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Corners Prediction */
+.corners-prediction {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background: var(--bg-dark);
+    border-radius: 8px;
+}
+
+.corner-team, .corner-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.corner-team span:first-child,
+.corner-total span:first-child {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.corner-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.corner-total .corner-value {
+    color: var(--accent-green);
+}
+
+/* Event Predictions */
+.event-predictions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.event-pred-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.event-pred-label {
+    width: 140px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.event-pred-bar-container {
+    flex: 1;
+    height: 20px;
+    background: var(--bg-dark);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.event-pred-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.event-pred-bar.high {
+    background: linear-gradient(90deg, var(--accent-green), #4ade80);
+}
+
+.event-pred-bar.medium {
+    background: linear-gradient(90deg, var(--accent-yellow), #fbbf24);
+}
+
+.event-pred-bar.low {
+    background: linear-gradient(90deg, var(--accent-red), #f87171);
+}
+
+.event-pred-value {
+    width: 45px;
+    text-align: right;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.event-pred-value.high {
+    color: var(--accent-green);
+}
+
+.event-pred-value.medium {
+    color: var(--accent-yellow);
+}
+
+.event-pred-value.low {
+    color: var(--accent-red);
+}
+
+/* Commentary Tab */
+.commentary-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0.5rem 0;
+}
+
+.commentary-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.2s ease;
+}
+
+.commentary-item:hover {
+    background: var(--bg-card-hover);
+}
+
+.commentary-item:last-child {
+    border-bottom: none;
+}
+
+.commentary-minute {
+    min-width: 45px;
+    font-weight: 700;
+    color: var(--accent-blue);
+    font-size: 0.85rem;
+}
+
+.commentary-text {
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.commentary-goal .commentary-text {
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+.commentary-yellow .commentary-text {
+    color: var(--accent-yellow);
+}
+
+.commentary-red .commentary-text {
+    color: var(--accent-red);
+    font-weight: 600;
+}
+
+.commentary-var .commentary-text {
+    color: var(--accent-blue);
+    font-style: italic;
+}
+
+.commentary-break .commentary-text {
+    color: var(--text-muted);
+    font-weight: 600;
+}
