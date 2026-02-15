@@ -36,6 +36,24 @@ dependencies {
     // Swagger/OpenAPI Documentation
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.5")
 
+    // Rate Limiting
+    implementation("com.bucket4j:bucket4j_jdk17-core:8.14.0")
+
+    // Caching
+    implementation("org.springframework.boot:spring-boot-starter-cache")
+    implementation("com.github.ben-manes.caffeine:caffeine:3.1.8")
+
+    // Metrics and Monitoring
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("io.micrometer:micrometer-registry-prometheus")
+
+    // Distributed Tracing
+    implementation("io.micrometer:micrometer-tracing-bridge-brave")
+    implementation("io.zipkin.reporter2:zipkin-reporter-brave")
+
+    // Input Validation
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+
     // SpotBugs annotations for suppressing warnings
     compileOnly("com.github.spotbugs:spotbugs-annotations:4.8.6")
 

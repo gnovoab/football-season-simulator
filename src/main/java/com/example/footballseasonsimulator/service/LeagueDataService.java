@@ -97,7 +97,7 @@ public class LeagueDataService {
     public List<League> getAllLeagues() {
         return new ArrayList<>(leagues.values());
     }
-    
+
     public League getLeague(String leagueId) {
         return leagues.get(leagueId);
     }

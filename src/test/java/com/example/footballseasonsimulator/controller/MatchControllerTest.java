@@ -97,10 +97,10 @@ class MatchControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/v1/matches/{id} should return 404 for non-existent match")
-    void getMatchShouldReturn404ForNonExistent() throws Exception {
+    @DisplayName("GET /api/v1/matches/{id} should return 400 for invalid match ID format")
+    void getMatchShouldReturn400ForInvalidFormat() throws Exception {
         mockMvc.perform(get("/api/v1/matches/non-existent-match-id"))
-                .andExpect(status().isNotFound());
+                .andExpect(status().isBadRequest());
     }
 
     @Test
@@ -111,17 +111,17 @@ class MatchControllerTest {
     }
 
     @Test
-    @DisplayName("GET /api/v1/matches/{id}/events should return 404 for non-existent match")
-    void getMatchEventsShouldReturn404ForNonExistent() throws Exception {
+    @DisplayName("GET /api/v1/matches/{id}/events should return 400 for invalid match ID format")
+    void getMatchEventsShouldReturn400ForInvalidFormat() throws Exception {
         mockMvc.perform(get("/api/v1/matches/non-existent/events"))
-                .andExpect(status().isNotFound());
+                .andExpect(status().isBadRequest());
     }
 
     @Test
-    @DisplayName("GET /api/v1/matches/{id}/events/significant should return 404 for non-existent")
-    void getSignificantEventsShouldReturn404ForNonExistent() throws Exception {
+    @DisplayName("GET /api/v1/matches/{id}/events/significant should return 400 for invalid format")
+    void getSignificantEventsShouldReturn400ForInvalidFormat() throws Exception {
         mockMvc.perform(get("/api/v1/matches/non-existent/events/significant"))
-                .andExpect(status().isNotFound());
+                .andExpect(status().isBadRequest());
     }
 
     @Nested

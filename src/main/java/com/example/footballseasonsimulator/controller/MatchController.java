@@ -11,7 +11,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,7 +25,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/v1/matches")
-@CrossOrigin(origins = "*")
+@Validated
 @Tag(name = "Matches", description = "Match details and events endpoints. Access individual match information, live events, and match statistics.")
 public class MatchController {
 
@@ -44,7 +47,10 @@ public class MatchController {
     @GetMapping("/{matchId}")
     public ResponseEntity<MatchDetailDTO> getMatch(
             @Parameter(description = "Unique match identifier (UUID format)")
-            @PathVariable String matchId) {
+            @PathVariable
+            @NotBlank(message = "Match ID is required")
+            @Pattern(regexp = "^[a-f0-9-]{36}$", message = "Match ID must be a valid UUID")
+            String matchId) {
         Match match = simulationService.getMatch(matchId);
         if (match == null) {
             return ResponseEntity.notFound().build();
@@ -70,7 +76,10 @@ public class MatchController {
     @GetMapping("/{matchId}/events")
     public ResponseEntity<List<MatchEvent>> getMatchEvents(
             @Parameter(description = "Unique match identifier")
-            @PathVariable String matchId) {
+            @PathVariable
+            @NotBlank(message = "Match ID is required")
+            @Pattern(regexp = "^[a-f0-9-]{36}$", message = "Match ID must be a valid UUID")
+            String matchId) {
         Match match = simulationService.getMatch(matchId);
         if (match == null) {
             return ResponseEntity.notFound().build();
@@ -89,7 +98,10 @@ public class MatchController {
     @GetMapping("/{matchId}/events/significant")
     public ResponseEntity<List<MatchEvent>> getSignificantEvents(
             @Parameter(description = "Unique match identifier")
-            @PathVariable String matchId) {
+            @PathVariable
+            @NotBlank(message = "Match ID is required")
+            @Pattern(regexp = "^[a-f0-9-]{36}$", message = "Match ID must be a valid UUID")
+            String matchId) {
         Match match = simulationService.getMatch(matchId);
         if (match == null) {
             return ResponseEntity.notFound().build();

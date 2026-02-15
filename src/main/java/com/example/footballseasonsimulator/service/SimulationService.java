@@ -1,5 +1,7 @@
 package com.example.footballseasonsimulator.service;
 
+import com.example.footballseasonsimulator.config.CacheConfig;
+import com.example.footballseasonsimulator.config.MetricsConfig;
 import com.example.footballseasonsimulator.engine.MatchEngine;
 import com.example.footballseasonsimulator.engine.RoundRobinScheduler;
 import com.example.footballseasonsimulator.model.*;
@@ -8,6 +10,7 @@ import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -28,17 +31,20 @@ public class SimulationService {
     private final LeagueDataService leagueDataService;
     private final StandingsService standingsService;
     private final MatchEventPublisher eventPublisher;
+    private final MetricsConfig metricsConfig;
     private final RoundRobinScheduler scheduler;
-    
+
     private final ScheduledExecutorService executor;
     private final Map<String, LeagueSimulation> leagueSimulations = new ConcurrentHashMap<>();
-    
-    public SimulationService(LeagueDataService leagueDataService, 
+
+    public SimulationService(LeagueDataService leagueDataService,
                             StandingsService standingsService,
-                            MatchEventPublisher eventPublisher) {
+                            MatchEventPublisher eventPublisher,
+                            MetricsConfig metricsConfig) {
         this.leagueDataService = leagueDataService;
         this.standingsService = standingsService;
         this.eventPublisher = eventPublisher;
+        this.metricsConfig = metricsConfig;
         this.scheduler = new RoundRobinScheduler();
         this.executor = Executors.newScheduledThreadPool(10);
     }
@@ -46,11 +52,15 @@ public class SimulationService {
     @PostConstruct
     public void init() {
         log.info("Starting Football Season Simulator...");
-        
+
         // Initialize all leagues
-        for (League league : leagueDataService.getAllLeagues()) {
+        List<League> leagues = leagueDataService.getAllLeagues();
+        for (League league : leagues) {
             startLeagueSimulation(league);
         }
+
+        // Record active leagues metric
+        metricsConfig.setActiveLeagues(leagues.size());
     }
     
     @PreDestroy
@@ -94,11 +104,13 @@ public class SimulationService {
         return standingsService.getTeamStanding(leagueId, sim.currentSeason, teamId);
     }
 
+    @Cacheable(value = CacheConfig.CACHE_FIXTURES, key = "'current-' + #leagueId")
     public Fixture getCurrentFixture(String leagueId) {
         LeagueSimulation sim = leagueSimulations.get(leagueId);
         return sim != null ? sim.currentFixture : null;
     }
 
+    @Cacheable(value = CacheConfig.CACHE_FIXTURES, key = "'next-' + #leagueId")
     public Fixture getNextFixture(String leagueId) {
         LeagueSimulation sim = leagueSimulations.get(leagueId);
         if (sim == null || sim.seasonFixtures == null) return null;
@@ -263,15 +275,22 @@ public class SimulationService {
         
         void onFixtureComplete() {
             log.info("[{}] Matchweek {} complete", league.name(), currentMatchweek);
-            
+
             for (Match match : currentFixture.matches()) {
                 standingsService.updateFromMatch(league.id(), currentSeason, match);
                 completedMatches.add(match);
+
+                // Record metrics
+                metricsConfig.matchesCompletedCounter().increment();
+                int totalGoals = match.getHomeScore() + match.getAwayScore();
+                for (int i = 0; i < totalGoals; i++) {
+                    metricsConfig.goalsCounter().increment();
+                }
             }
-            
+
             List<Standing> standings = standingsService.getStandings(league.id(), currentSeason);
             eventPublisher.publishStandings(league.id(), currentSeason, standings);
-            
+
             if (currentMatchweek >= seasonFixtures.size()) {
                 completeSeason();
             } else {

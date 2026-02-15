@@ -9,7 +9,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,7 +23,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/v1/leagues")
-@CrossOrigin(origins = "*")
+@Validated
 @Tag(name = "Leagues", description = "League management and information endpoints. Access league data, standings, fixtures, and simulation status for all 5 European leagues.")
 public class LeagueController {
 
@@ -53,7 +56,10 @@ public class LeagueController {
     @GetMapping("/{leagueId}")
     public ResponseEntity<LeagueDTO> getLeague(
             @Parameter(description = "League ID (e.g., premier-league, la-liga, serie-a, bundesliga, ligue-1)")
-            @PathVariable String leagueId) {
+            @PathVariable
+            @NotBlank(message = "League ID is required")
+            @Pattern(regexp = "^[a-z0-9-]+$", message = "League ID must contain only lowercase letters, numbers, and hyphens")
+            String leagueId) {
         League league = simulationService.getLeague(leagueId);
         if (league == null) {
             return ResponseEntity.notFound().build();
@@ -68,7 +74,11 @@ public class LeagueController {
     @ApiResponse(responseCode = "200", description = "Successfully retrieved standings")
     @GetMapping("/{leagueId}/standings")
     public List<Standing> getStandings(
-            @Parameter(description = "League ID") @PathVariable String leagueId) {
+            @Parameter(description = "League ID")
+            @PathVariable
+            @NotBlank(message = "League ID is required")
+            @Pattern(regexp = "^[a-z0-9-]+$", message = "League ID must contain only lowercase letters, numbers, and hyphens")
+            String leagueId) {
         return simulationService.getStandings(leagueId);
     }
 
@@ -82,7 +92,11 @@ public class LeagueController {
     })
     @GetMapping("/{leagueId}/fixture")
     public ResponseEntity<FixtureDTO> getCurrentFixture(
-            @Parameter(description = "League ID") @PathVariable String leagueId) {
+            @Parameter(description = "League ID")
+            @PathVariable
+            @NotBlank(message = "League ID is required")
+            @Pattern(regexp = "^[a-z0-9-]+$", message = "League ID must contain only lowercase letters, numbers, and hyphens")
+            String leagueId) {
         Fixture fixture = simulationService.getCurrentFixture(leagueId);
         if (fixture == null) {
             return ResponseEntity.noContent().build();
@@ -97,7 +111,11 @@ public class LeagueController {
     @ApiResponse(responseCode = "200", description = "Successfully retrieved live matches")
     @GetMapping("/{leagueId}/live")
     public List<MatchDTO> getLiveMatches(
-            @Parameter(description = "League ID") @PathVariable String leagueId) {
+            @Parameter(description = "League ID")
+            @PathVariable
+            @NotBlank(message = "League ID is required")
+            @Pattern(regexp = "^[a-z0-9-]+$", message = "League ID must contain only lowercase letters, numbers, and hyphens")
+            String leagueId) {
         return simulationService.getLiveMatches(leagueId).stream()
             .map(MatchDTO::from)
             .toList();
@@ -110,7 +128,11 @@ public class LeagueController {
     @ApiResponse(responseCode = "200", description = "Successfully retrieved completed matches")
     @GetMapping("/{leagueId}/results")
     public List<MatchDTO> getCompletedMatches(
-            @Parameter(description = "League ID") @PathVariable String leagueId) {
+            @Parameter(description = "League ID")
+            @PathVariable
+            @NotBlank(message = "League ID is required")
+            @Pattern(regexp = "^[a-z0-9-]+$", message = "League ID must contain only lowercase letters, numbers, and hyphens")
+            String leagueId) {
         return simulationService.getCompletedMatches(leagueId).stream()
             .map(MatchDTO::from)
             .toList();
@@ -126,7 +148,11 @@ public class LeagueController {
     })
     @GetMapping("/{leagueId}/status")
     public ResponseEntity<SimulationService.SimulationStatus> getStatus(
-            @Parameter(description = "League ID") @PathVariable String leagueId) {
+            @Parameter(description = "League ID")
+            @PathVariable
+            @NotBlank(message = "League ID is required")
+            @Pattern(regexp = "^[a-z0-9-]+$", message = "League ID must contain only lowercase letters, numbers, and hyphens")
+            String leagueId) {
         SimulationService.SimulationStatus status = simulationService.getStatus(leagueId);
         if (status == null) {
             return ResponseEntity.notFound().build();
@@ -144,7 +170,11 @@ public class LeagueController {
     })
     @GetMapping("/{leagueId}/next-fixture")
     public ResponseEntity<FixtureDTO> getNextFixture(
-            @Parameter(description = "League ID") @PathVariable String leagueId) {
+            @Parameter(description = "League ID")
+            @PathVariable
+            @NotBlank(message = "League ID is required")
+            @Pattern(regexp = "^[a-z0-9-]+$", message = "League ID must contain only lowercase letters, numbers, and hyphens")
+            String leagueId) {
         Fixture fixture = simulationService.getNextFixture(leagueId);
         if (fixture == null) {
             return ResponseEntity.noContent().build();
