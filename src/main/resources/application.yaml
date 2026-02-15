@@ -2,6 +2,11 @@ spring:
   application:
     name: football-season-simulator
 
+# Rate Limiting Configuration
+# Set to false to disable rate limiting (e.g., for testing)
+rate-limit:
+  enabled: true
+
 # CORS Configuration
 # For production, replace '*' with specific allowed origins
 cors:

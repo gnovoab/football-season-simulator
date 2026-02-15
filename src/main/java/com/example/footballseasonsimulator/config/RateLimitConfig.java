@@ -2,6 +2,7 @@ package com.example.footballseasonsimulator.config;
 
 import io.github.bucket4j.Bandwidth;
 import io.github.bucket4j.Bucket;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
 
 import java.time.Duration;
@@ -11,8 +12,12 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Rate limiting configuration using Bucket4j.
  * Provides token bucket rate limiting per client IP address.
+ *
+ * <p>This configuration is conditionally enabled based on the {@code rate-limit.enabled} property.
+ * When disabled (e.g., in test profile), no rate limiting beans are created.
  */
 @Configuration
+@ConditionalOnProperty(name = "rate-limit.enabled", havingValue = "true", matchIfMissing = true)
 public class RateLimitConfig {
 
     /**

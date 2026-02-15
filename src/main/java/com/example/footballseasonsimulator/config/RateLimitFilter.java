@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
@@ -18,9 +19,13 @@ import java.io.IOException;
 /**
  * HTTP filter that enforces rate limiting on API requests.
  * Returns HTTP 429 (Too Many Requests) when rate limit is exceeded.
+ *
+ * <p>This filter is conditionally enabled based on the {@code rate-limit.enabled} property.
+ * When disabled (e.g., in test profile), requests pass through without rate limiting.
  */
 @Component
 @Order(1)
+@ConditionalOnProperty(name = "rate-limit.enabled", havingValue = "true", matchIfMissing = true)
 public class RateLimitFilter extends OncePerRequestFilter {
 
     private static final Logger log = LoggerFactory.getLogger(RateLimitFilter.class);

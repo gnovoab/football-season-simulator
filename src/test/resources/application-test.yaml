@@ -1,0 +1,72 @@
+# Test Profile Configuration
+# This profile is activated for all integration tests via @ActiveProfiles("test")
+
+spring:
+  application:
+    name: football-season-simulator-test
+
+# Rate Limiting - DISABLED for tests
+# This prevents 429 (Too Many Requests) errors during test execution
+rate-limit:
+  enabled: false
+
+# CORS Configuration - Allow all for tests
+cors:
+  allowed-origins: "*"
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+  allowed-headers: "*"
+  allow-credentials: false
+  max-age: 3600
+
+# Actuator and Metrics Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  # Distributed Tracing - DISABLED for tests (no Zipkin needed)
+  tracing:
+    sampling:
+      probability: 0.0  # Disable tracing in tests
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+
+# Logging Configuration - Simplified for tests
+# Use plain text format instead of ECS JSON for better test output readability
+logging:
+  level:
+    root: WARN
+    com.example.footballseasonsimulator: INFO
+    org.springframework.web: WARN
+    org.hibernate: WARN
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+# H2 Database Configuration for tests
+spring.datasource:
+  url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  driver-class-name: org.h2.Driver
+  username: sa
+  password:
+
+spring.jpa:
+  hibernate:
+    ddl-auto: create-drop
+  show-sql: false
+  properties:
+    hibernate:
+      format_sql: false
+
+# Cache Configuration - Keep enabled but with shorter TTL for tests
+cache:
+  fixtures:
+    ttl-seconds: 1
+    max-size: 50
+

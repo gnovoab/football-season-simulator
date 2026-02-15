@@ -1,13 +1,12 @@
 package com.example.footballseasonsimulator.controller;
 
-import com.example.footballseasonsimulator.config.RateLimitConfig;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.Matchers.*;
@@ -17,22 +16,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for StatisticsController.
  * Uses real services and data - no mocking.
+ * Rate limiting is disabled via the 'test' profile.
  */
 @SpringBootTest
 @AutoConfigureMockMvc
+@ActiveProfiles("test")
 class StatisticsControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
-
-    @Autowired
-    private RateLimitConfig rateLimitConfig;
-
-    @BeforeEach
-    void setUp() {
-        // Clear rate limit buckets before each test to avoid 429 errors
-        rateLimitConfig.clearBuckets();
-    }
 
     @Nested
     @DisplayName("GET /api/v1/statistics/{leagueId}/top-scorers")
