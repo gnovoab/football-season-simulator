@@ -164,7 +164,10 @@ tasks.jacocoTestReport {
             fileTree(it) {
                 exclude(
                     "**/model/**",
-                    "**/config/**",
+                    // Exclude specific config classes, but keep RateLimitConfig and RateLimitFilter
+                    "**/config/CacheConfig.class",
+                    "**/config/CorsConfig.class",
+                    "**/config/WebSocketConfig.class",
                     "**/FootballSeasonSimulatorApplication.class",
                     "**/engine/SeasonRunner.class",
                     "**/service/SimulationService\$LeagueSimulation.class",
@@ -184,7 +187,10 @@ tasks.jacocoTestCoverageVerification {
             fileTree(it) {
                 exclude(
                     "**/model/**",
-                    "**/config/**",
+                    // Exclude specific config classes, but keep RateLimitConfig and RateLimitFilter
+                    "**/config/CacheConfig.class",
+                    "**/config/CorsConfig.class",
+                    "**/config/WebSocketConfig.class",
                     "**/FootballSeasonSimulatorApplication.class",
                     "**/engine/SeasonRunner.class",
                     "**/service/SimulationService\$LeagueSimulation.class",

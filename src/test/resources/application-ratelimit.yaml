@@ -1,0 +1,46 @@
+# Rate Limit Test Profile Configuration
+# This profile is used specifically for testing rate limiting functionality
+
+spring:
+  application:
+    name: football-season-simulator-ratelimit-test
+
+# Rate Limiting - ENABLED for rate limit tests
+rate-limit:
+  enabled: true
+
+# CORS Configuration
+cors:
+  allowed-origins: "*"
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+  allowed-headers: "*"
+  allow-credentials: false
+  max-age: 3600
+
+# Actuator and Metrics Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  tracing:
+    sampling:
+      probability: 0.0
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+
+# Logging Configuration - Simplified for tests
+logging:
+  level:
+    root: WARN
+    com.example.footballseasonsimulator: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
